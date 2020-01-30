@@ -1,0 +1,51 @@
+# Basic Information
+title: My Portfolio
+email: yatharthverma070@gmail.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Hello Everyone. My name is Yatharth Verma. I am persuing Btech in Computer Science And Engineering.
+  This website contains portfolio of mine including various projects that i have done.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+github_username:  yatharth1706
+linkedin_username: yatharth-verma-938924169/
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+
+# Navigation links
+navigation: 
+  - {name: 'Home', link: '/'}
+  - {name: 'About', link: '/about'}
+  - {name: 'Contact', link: '/contact'}
+  - {name: 'Help', link: '/help'}
+  
+
+# Default frontmatter for posts page
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

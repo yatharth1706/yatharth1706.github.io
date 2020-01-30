@@ -1,0 +1,7 @@
+<!-- Here we will design a navbar -->
+<div class="nav-container">
+    {%- for navlinks in site.navigation-%}
+        <a href="{{navlinks.link}}">{{navlinks.name}}</a>
+    {%- endfor-%}
+    <!-- <img src="/assets/portfolio-logo.png" alt="portfolio-logo"> -->
+</div>

@@ -1,0 +1,28 @@
+<div class="container-fluid  footer">
+    <div class="row">
+        <div class="col-md-6">
+            {%- if site.title-%}
+                <h3>{{site.title}}</h3>
+            {%- endif -%}
+
+            {%- if site.description -%}
+                <p>{{ site.description }}</p>
+            {%- endif -%}
+        </div>
+        <div class="col-md-6 social-links">
+            
+            {%- if site.email -%}
+            <span><ion-icon name="mail"></ion-icon> {{site.email}}</span>
+            {%- endif -%}
+            
+            {%- if site.github_username -%}
+                <span><ion-icon name="logo-github"></ion-icon><a href="https://github.com/{{site.github_username}}"> {{site.github_username}}</a></span>
+            {%- endif -%}
+            
+            {%- if site.linkedin_username -%}
+           <span><ion-icon name="logo-linkedin"></ion-icon><a href="https://linkedin.com/in/{{site.linkedin_username}}"> {{site.linkedin_username}}</a></span>
+            {%- endif -%}
+            
+        </div>
+    </div>
+</div>
