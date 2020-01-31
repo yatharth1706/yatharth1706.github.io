@@ -1,16 +1,19 @@
-<div class="container-fluid  footer">
-    <div class="row">
-        <div class="col-md-6">
-            {%- if site.title-%}
-                <h3>{{site.title}}</h3>
-            {%- endif -%}
 
+<div class="container-fluid footstyles">
+    <div class="row foot2">
+        <div class="col-md-6 description">
+            <div class="title">
+                {%- if site.title -%}
+                    <h3>{{site.title}}</h3>
+                {%- endif -%} 
+            </div>
             {%- if site.description -%}
-                <p>{{ site.description }}</p>
+                <div class="container">
+                    <p>{{site.description}}</p>
+                </div>
             {%- endif -%}
         </div>
         <div class="col-md-6 social-links">
-            
             {%- if site.email -%}
             <span><ion-icon name="mail"></ion-icon> {{site.email}}</span>
             {%- endif -%}
@@ -22,7 +25,6 @@
             {%- if site.linkedin_username -%}
            <span><ion-icon name="logo-linkedin"></ion-icon><a href="https://linkedin.com/in/{{site.linkedin_username}}"> {{site.linkedin_username}}</a></span>
             {%- endif -%}
-            
         </div>
     </div>
 </div>
