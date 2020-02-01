@@ -124,3 +124,9 @@ url('/assets/web.png');
     display: flex;
     flex-direction: column;
 }
+
+@media (max-width: 596px){
+    .card-container{
+        padding: 10px 10px;
+    }   
+}

@@ -3,7 +3,8 @@
 <body>
     <!-- navigation code -->
     {%- include nav.html-%}
-    {%- include poster.html -%}
+    <!-- {%- include poster.html -%} -->
+    <canvas  width="2000px" height = "400px"></canvas>
     <div id="container">
     <div class="card-container">
         {%- for post in site.posts -%}
@@ -21,6 +22,6 @@
 
     <!-- footer file -->
     {%- include footer.html -%}
-
+    <script type="text/javascript" src="/assets/canvas.js"></script>
     </body>
 </html>
