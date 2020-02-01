@@ -182,8 +182,27 @@ hr{
     flex-direction: column;
 }
 
+@media (max-width: 1276px){
+    .canvas-above{
+        top: 170;
+        left: 300;
+    }
+}
 @media (max-width: 596px){
-    .card-container{
-        padding: 10px 10px;
+    .canvas-above{
+        top: 170;
+        left: 300;
+    }   
+}
+@media (max-width: 596px){
+    .canvas-above{
+        top: 170;
+        left: 300;
+    }   
+}
+@media (max-width: 596px){
+    .canvas-above{
+        top: 170;
+        left: 300;
     }   
 }
