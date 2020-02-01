@@ -99,7 +99,7 @@ url('/assets/web.png');
     display: flex;
     overflow: hidden;
     width: 1000px;
-    padding: 28px;
+    padding: 18px;
     margin: 18px;
     transition: all 0.5s ease;
 }
@@ -160,9 +160,6 @@ hr{
     padding: 38px;
 }
 
-.foot2>div{
-    padding: 18px;
-}
 .foot2>div>h3{
     margin-left: 15px;
 }
@@ -182,27 +179,244 @@ hr{
     flex-direction: column;
 }
 
+.title2{
+    font-size: 20px;
+}
+
 @media (max-width: 1276px){
     .canvas-above{
         top: 170;
         left: 300;
     }
+    .canvas-above>h3{
+        font-size: 38px;
+    }
+    .project-photo>img{
+        height: 290px;
+        width: 450px;
+    }
 }
-@media (max-width: 596px){
+@media (max-width: 1196px){
     .canvas-above{
         top: 170;
         left: 300;
+    }
+    .canvas-above>h3{
+        font-size: 36px;
     }   
+    .canvas-button{
+        margin-left: 110px;
+    }
+
+    .project-photo>img{
+        height: 260px;
+        width: 400px;
+    }
 }
-@media (max-width: 596px){
+@media (max-width: 1036px){
     .canvas-above{
         top: 170;
-        left: 300;
+        left: 280;
     }   
+    .canvas-above>h3{
+        font-size: 34px;
+    }
+    .canvas-button{
+        margin-left: 100px;
+    }
+    .project-photo>img{
+        height: 200px;
+        width: 300px;
+    }
 }
-@media (max-width: 596px){
+@media (max-width: 990px){
     .canvas-above{
         top: 170;
-        left: 300;
+        left: 260;
     }   
+    .canvas-above>h3{
+        font-size: 33px;
+    }
+    .canvas-button{
+        margin-left: 100px;
+    }
+    .project-photo>img{
+        height: 180px;
+        width: 270px;
+    }
+}
+
+@media (max-width: 890px){
+    .canvas-above{
+        top: 170;
+        left: 220;
+    }   
+    .canvas-above>h3{
+        font-size: 31px;
+    }
+    .canvas-button{
+        margin-left: 100px;
+    }
+    .project-photo>img{
+        height: 260px;
+        width: 100%;
+    }
+    .project-container{
+        padding: 0;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 790px){
+    .canvas-above{
+        top: 170;
+        left: 200;
+    }   
+    .canvas-above>h3{
+        font-size: 30px;
+    }
+    .canvas-button{
+        margin-left: 100px;
+    }
+    .project-photo>img{
+        height: 240px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 740px){
+    .canvas-above{
+        top: 170;
+        left: 100;
+    }   
+    .canvas-above>h3{
+        font-size: 30px;
+    }
+    .canvas-button{
+        margin-left: 100px;
+    }
+    #container{
+        padding: 10px 60px;
+    }
+    .project-photo>img{
+        height: 220px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 620px){
+    .canvas-above{
+        top: 170;
+        left: 50;
+    }   
+    .canvas-above>h3{
+        font-size: 28px;
+    }
+    .canvas-button{
+        margin-left: 100px;
+    }
+    #container{
+        padding: 10px 30px;
+    }
+    .card-container{
+        padding: 38px 10px;
+    }
+}
+
+@media (max-width: 500px){
+    .canvas-above{
+        top: 170;
+        left: 40;
+    }   
+    .canvas-above>h3{
+        font-size: 26px;
+    }
+    .canvas-button{
+        margin-left: 70px;
+    }
+    #container{
+        padding: 10px 10px;
+    }
+    .card-container{
+        padding: 38px 10px;
+    }
+    
+}
+
+
+@media (max-width: 450px){
+    .canvas-above{
+        top: 170;
+        left: 40;
+    }   
+    .canvas-above>h3{
+        font-size: 20px;
+    }
+    .canvas-button{
+        margin-left: 70px;
+    }
+    .title2{
+        font-size: 13px!important;
+    }
+    .links2{
+        font-size: 3px;
+    }
+    #container{
+        padding: 10px 0px;
+    }
+    .card-container{
+        padding: 38px 10px;
+    }
+}
+
+@media (max-width: 400px){
+    .canvas-above{
+        top: 170;
+        left: 40;
+    }   
+    .canvas-above>h3{
+        font-size: 20px;
+    }
+    .canvas-button{
+        margin-left: 30px;
+    }
+    .title2{
+        font-size: 14px!important;
+        margin-bottom: 10px!important;
+    }
+    .links2{
+        display: none;
+    }
+    #container{
+        padding: 10px 0px;
+    }
+    .card-container{
+        padding: 38px 0px;
+    }
+    .foot2{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 350px){
+    .canvas-above{
+        top: 170;
+        left: 40;
+    }   
+    .canvas-above>h3{
+        font-size: 20px;
+    }
+    .canvas-button{
+        margin-left: 30px;
+    }
+    .title2{
+        font-size: 14px!important;
+        margin-bottom: 10px!important;
+    }
+    .links2{
+        display: none;
+    }
+    .container{
+        font-size: 10px;
+    }
 }
