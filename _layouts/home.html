@@ -5,19 +5,37 @@
     {%- include nav.html-%}
     <!-- {%- include poster.html -%} -->
     <canvas></canvas>
-    <div id="container">
-    <div class="card-container">
-        {%- for post in site.posts -%}
-            <div class="card">
-                <img class="card-img-top" src="{{post.imageurl}}" alt="Card image cap">
-                <div class="card-body">
-                    <h4 class="card-title"><a href="{{post.url}}">{{post.title}}</a></h4>
-                    <p class="card-text">{{post.description}}</p>
-                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-                </div>
-            </div>
-        {%- endfor -%}
+    <div class="canvas-above">
+        <h3>Hello I'm Yatharth Verma</h3>
+        <h3>I'm a Full Stack Web Developer</h3>
+        <button class="canvas-button" data-page="container">See My Work Below</button>
     </div>
+    <div id="container">
+        <div class="card-container">
+            {%- if site.posts -%}
+            <h3>My Projects</h3>
+            {%- endif -%}
+            {%- for post in site.posts -%}
+                <div class="project-container">
+                    <div class="project-photo">
+                        {%- if post.imageurl -%}
+                            <img src="{{post.imageurl}}" alt="post.title">
+                        {%- endif -%}
+                    </div>
+                    <div class="project-details">
+                        {%- if post.title -%}
+                            <h3>{{post.title}}</h3>
+                        {%- endif -%}
+                        {%- if post.description -%}
+                            <p>{{post.description}}</p>
+                        {%- endif -%}
+
+                        <a href="https://github.com/yatharth1706/{{post.githuburl}}"><button class="btn btn-md btn-primary">View on Github</button></a>
+                    </div>
+                </div>
+            {%- endfor -%}
+
+        </div>
     </div>
 
     <!-- footer file -->

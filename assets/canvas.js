@@ -1,6 +1,14 @@
+$(document).ready(function() {
+	$(".canvas-button").click(function(){
+		var pageId = $(this).attr("data-page");
+		$("html, body").animate({ scrollTop: $("#"+pageId).offset().top },1500);
+	  })
+});
+
+
 var canvas = document.querySelector('canvas')
-canvas.width = window.document.body.clientWidth-15;
-canvas.height = 300;
+canvas.width = window.document.body.clientWidth;
+canvas.height = 400;
 
 console.log(canvas);
 
@@ -17,11 +25,11 @@ var maxRadius = 40;
 var minRadius = 3;
 
 var colorArray = [
-	'#F205CB',
-	'#7C05F2',
-	'#6204BF',
-	'#050259',
-	'#F23827'
+	'#1455D9',
+	'#BF1736',
+	'#0E2773',
+	'#1438A6',
+	'#0D1440'
 ];
 
 window.addEventListener('mousemove' , (event) => {
@@ -30,11 +38,10 @@ window.addEventListener('mousemove' , (event) => {
 
 })
 window.addEventListener('resize', () => {
-    canvas.width = window.document.body.clientWidth-15;
-    canvas.height = 300;
+    canvas.width = window.document.body.clientWidth;
+    canvas.height = 400;
 })
 function circle(x,y,dx,dy,radius) {
-	
 	this.x = x;
 	this.y = y;
 	this.dx = dx;
@@ -87,7 +94,7 @@ for(var i = 0;i < 800;i++){
 	var y = Math.random() * innerHeight;
 	var dx = (Math.random() - 0.5);
 	var dy = (Math.random() - 0.5);
-	var radius = Math.random()*3 + 1;
+	var radius = Math.random()*2 + 1;
 
 	circleArray.push(new circle(x,y,dx,dy,radius));
 
@@ -96,9 +103,12 @@ for(var i = 0;i < 800;i++){
 // var circle =  new circle(200,200,3,3,30);
 
 function animate() {
+	
 	c.clearRect(0,0,innerWidth,innerHeight);
+	
 	requestAnimationFrame(animate);
-
+	c.fillStyle = "black";
+	c.fillRect(0, 0, canvas.width, canvas.height);
 	// circle.update();
 	// c.font = "30px Arial";
 	// c.fillText("Hello I am yatharth verma", 10, 50);

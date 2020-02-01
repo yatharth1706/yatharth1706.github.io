@@ -7,7 +7,7 @@ html,body{
 }
 
 canvas{
-    margin-left: 15px;
+    margin-top: -17px;
     border: none;
 }
 
@@ -38,11 +38,13 @@ canvas{
 }
 
 #container{
-    min-height: 50%;
     padding: 18px 78px;
     background-color: #f5f5fd;
 }
 
+.githubbtn{
+    margin-bottom: 10px;
+}
 
 .postercontainer{
     background-image: linear-gradient(to bottom, rgba(53, 134, 133, 0.52), rgba(108, 181, 202, 0.73)),
@@ -71,7 +73,7 @@ url('/assets/web.png');
     display: flex;
     // flex-direction: row;
     flex-wrap: wrap;
-    padding: 18px 18px;
+    padding: 38px 68px;
 }
 
 .card{
@@ -91,6 +93,56 @@ url('/assets/web.png');
 .card>img{
     height: 180px;
     width: 100%;
+}
+
+.project-container{
+    display: flex;
+    overflow: hidden;
+    width: 1000px;
+    padding: 28px;
+    margin: 18px;
+    transition: all 0.5s ease;
+}
+
+.project-container:hover{
+    box-shadow: 10px 1px 30px 1px #232323;
+}
+.card-container>h3{
+    margin: 0 auto;
+}
+
+
+
+hr{
+    padding: 0;
+    margin: 0;
+}
+
+.canvas-above{
+    position: absolute;
+    color: white;
+    padding: 18px;
+    top: 170;
+    left: 400;
+}
+
+.canvas-button{
+    padding: 10px;
+    margin-top: 15px;
+    margin-left: 160px;
+}
+
+.canvas-above>h3{
+    font-size: 40px;
+}
+
+.project-photo,.project-details{
+    padding: 18px;
+}
+
+.project-photo>img{
+    height: 300px;
+    width: 500px;
 }
 
 .footstyles{
