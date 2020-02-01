@@ -89,12 +89,11 @@ for(var i = 0;i < 800;i++){
 
 }
 
-var circle =  new circle(200,200,3,3,30);
+// var circle =  new circle(200,200,3,3,30);
 function animate() {
 	c.clearRect(0,0,innerWidth,innerHeight);
 	requestAnimationFrame(animate);
 
-	circle.update();
 	// c.font = "30px Arial";
 	// c.fillText("Hello I am yatharth verma", 10, 50);
 	for(var i = 0;i < circleArray.length ;i++){
