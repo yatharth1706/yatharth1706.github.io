@@ -1,5 +1,6 @@
-var canvas = document.querySelector('canvas');
-
+var canvas = document.querySelector('canvas')
+canvas.width = window.document.body.clientWidth-15;
+canvas.height = 300;
 
 console.log(canvas);
 
@@ -26,10 +27,12 @@ var colorArray = [
 window.addEventListener('mousemove' , (event) => {
 	mouse.x = event.x;
 	mouse.y = event.y;
-	console.log(mouse);
 
 })
-
+window.addEventListener('resize', () => {
+    canvas.width = window.document.body.clientWidth-15;
+    canvas.height = 300;
+})
 function circle(x,y,dx,dy,radius) {
 	
 	this.x = x;
@@ -39,6 +42,8 @@ function circle(x,y,dx,dy,radius) {
 	this.radius = radius;
 	this.color = colorArray[Math.floor(Math.random()*colorArray.length)];
 	this.minRadius = radius;
+	
+	//draw
 	this.draw = function() {
 		c.beginPath();
 		c.arc(this.x,this.y,this.radius,0, Math.PI*2,false);
@@ -46,6 +51,7 @@ function circle(x,y,dx,dy,radius) {
 		c.fill();
 	}
 
+	// update x and y position
 	this.update = function() {
 		if((this.x + this.radius) > innerWidth || this.x - this.radius < 0){
 			this.dx = -this.dx;
@@ -76,8 +82,6 @@ function circle(x,y,dx,dy,radius) {
 var circleArray = []
 
 
-
-
 for(var i = 0;i < 800;i++){
 	var x = Math.random() * innerWidth;
 	var y = Math.random() * innerHeight;
@@ -90,10 +94,12 @@ for(var i = 0;i < 800;i++){
 }
 
 // var circle =  new circle(200,200,3,3,30);
+
 function animate() {
 	c.clearRect(0,0,innerWidth,innerHeight);
 	requestAnimationFrame(animate);
 
+	// circle.update();
 	// c.font = "30px Arial";
 	// c.fillText("Hello I am yatharth verma", 10, 50);
 	for(var i = 0;i < circleArray.length ;i++){

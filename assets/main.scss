@@ -2,11 +2,12 @@
 // @import "minima";
 @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
 html,body{
-    margin: 0;
-    padding: 0;
+    margin: 0!important;
     overflow: hidden;
 }
+
 canvas{
+    margin-left: 15px;
     border: none;
 }
 
@@ -35,6 +36,7 @@ canvas{
     text-decoration: none;
     color: black;
 }
+
 #container{
     min-height: 50%;
     padding: 18px 78px;
