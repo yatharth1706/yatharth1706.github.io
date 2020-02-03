@@ -46,6 +46,38 @@ canvas{
     margin-bottom: 10px;
 }
 
+.skills-container{
+    padding: 18px 88px;
+    display: flex;
+    flex-direction: row;
+    background-color: #f5f5fd;
+    width: 1000px;
+}
+
+.skills-container>.bar-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.skills-container>.skills{
+    display: flex;
+    flex-direction: column;
+}
+
+.skills-container>.skills>span{
+    margin-top: 7px;
+    font-size: 17px;
+}
+
+.skills-container>.bar-container>.bar{
+    width: 200px;
+    height: 3px;
+    background-color: blue;
+    margin: 15px 14px;
+}
+
+
+
 .postercontainer{
     background-image: linear-gradient(to bottom, rgba(53, 134, 133, 0.52), rgba(108, 181, 202, 0.73)),
 url('/assets/web.png');
