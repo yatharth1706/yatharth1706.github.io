@@ -350,6 +350,9 @@ hr{
     .card-container{
         padding: 38px 10px;
     }
+    .post-content>.form-back{
+        width: 500px;
+    }
 }
 
 @media (max-width: 500px){
@@ -371,6 +374,9 @@ hr{
     }
     .links2{
         display: none;
+    }
+    .post-content>.form-back{
+        width: 450px;
     }
 }
 
@@ -397,6 +403,13 @@ hr{
     }
     .card-container{
         padding: 38px 10px;
+    }
+    .post-content>p>img{
+        width: 350px;
+        height: 270px;
+    }
+    .post-content>.form-back{
+        width: 430px;
     }
 }
 
@@ -427,6 +440,13 @@ hr{
     .foot2{
         flex-direction: column;
     }
+    .post-content>p>img{
+        width: 300px;
+        height: 240px;
+    }
+    .post-content>.form-back{
+        width: 430px;
+    }
 }
 
 @media (max-width: 350px){
@@ -449,5 +469,12 @@ hr{
     }
     .container{
         font-size: 10px;
+    }
+    .post-content>p>img{
+        width: 260px;
+        height: 200px;
+    }
+    .post-content>.form-back{
+        width: 400px;
     }
 }

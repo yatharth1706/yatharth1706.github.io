@@ -3,7 +3,8 @@
         <!-- navigation code -->
         {%- include nav.html-%}
         
-        <div class="post-content">
+        <div class="post-content container-fluid">
+            <h2>{{page.title}}</h2>
             {{ content }}
             
             {%- if page.permalink == '/contact/' -%}
