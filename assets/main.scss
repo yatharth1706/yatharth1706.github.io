@@ -183,6 +183,35 @@ hr{
     font-size: 20px;
 }
 
+
+.post-content{
+    padding: 28px;
+    width: 1000px;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.post-content>h2{
+    text-align: center;
+}
+
+.post-content>.form-back{
+    margin: 0 auto;
+    width: 500px;
+    padding: 18px 18px;
+}
+
+
+.post-content>p>img{
+    margin: 0 auto;
+    width: 450px;
+    height: 330px;
+    display: block;
+}
+
+
+
 @media (max-width: 1276px){
     .canvas-above{
         top: 170;

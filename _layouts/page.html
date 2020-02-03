@@ -1,0 +1,33 @@
+    {%- include head.html  -%}
+    <body>
+        <!-- navigation code -->
+        {%- include nav.html-%}
+        
+        <div class="post-content">
+            {{ content }}
+            
+            {%- if page.permalink == '/contact/' -%}
+            
+            <div class="form-back">
+                <form action="">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder = "Enter your name ">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder = "Enter your Email " required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="query" id="query" cols="30" rows="4" placeholder="Enter your query" class="form-control"></textarea>
+                    </div>
+                    <button class="btn btn-md btn-primary btn-block">Send Query</button>
+                </form>
+            </div>
+            {%- endif -%}
+        </div>
+
+        
+        <!-- footer file -->
+        {%- include footer.html -%}
+    
+    </body>
+</html>
