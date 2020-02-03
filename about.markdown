@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-![Yatharth](/assets/yatharth.jpg)
+![Yatharth](/assets/yatharth.JPG)
 
 Hello everyone. My name is **Yatharth Verma**. Currently persuing Btech in CSE from *Lovely Professional University* in Jalandhar, India.
 I am a *Full Stack Web Developer*. I love web designing and backend stuff.

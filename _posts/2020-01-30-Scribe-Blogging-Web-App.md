@@ -1,5 +1,5 @@
 ---
-imageurl: /assets/scribe.png
+imageurl: /assets/scribe.PNG
 title:  "Scribe Blogging Application!"
 description: "Made a scribe blogging application using Angular framework and firebase for hosting as well as for applying authentication for login and signup!"
 date:   2020-01-29 11:03:31 +0530
