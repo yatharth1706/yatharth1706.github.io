@@ -99,8 +99,8 @@ canvas{
 }
 
 .toggle>.title2{
-    margin-left: 18px;
-    padding: 18px 18px;
+   
+    padding: 18px 5px;
     float: left;
     font-family: 'Raleway', sans-serif;
 }
@@ -569,9 +569,7 @@ hr{
     .canvas-button{
         margin-left: 50px;
     }
-    .title2{
-        font-size: 13px!important;
-    }
+    
     .links2{
         font-size: 3px;
     }
@@ -595,7 +593,7 @@ hr{
         height: 200px;
     }
     .canvas-above{
-        margin-left: 100px;
+        margin-left: 60px;
     }
 }
 
@@ -607,10 +605,7 @@ hr{
     .canvas-button{
         margin-left: 30px;
     }
-    .title2{
-        font-size: 14px!important;
-        margin-bottom: 10px!important;
-    }
+    
     .links2{
         display: none;
     }
@@ -631,7 +626,7 @@ hr{
         width: 430px;
     }
     .canvas-above{
-        margin-left: 100px;
+        margin-left: 70px;
     }
 }
 
@@ -643,10 +638,7 @@ hr{
     .canvas-button{
         margin-left: 30px;
     }
-    .title2{
-        font-size: 14px!important;
-        margin-bottom: 10px!important;
-    }
+    
     .links2{
         display: none;
     }
@@ -661,6 +653,6 @@ hr{
         width: 400px;
     }
     .canvas-above{
-        margin-left: 100px;
+        margin-left: 60px;
     }
 }
