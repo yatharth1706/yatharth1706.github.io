@@ -1,14 +1,23 @@
 <!-- Here we will design a navbar -->
-<div class="nav-container">
+<div class="toggle">
     <div class="title2">
         {%- if site.title -%}
             <p style="margin-top:-5px"><strong>{{site.title}}</strong></p>
         {%- endif -%}
     </div>
-    <div class="links2">
+    <div class="ico">
+        <div class="links2">
+            {%- for navlinks in site.navigation-%}
+                <a href="{{navlinks.link}}">{{navlinks.name}}</a>
+            {%- endfor-%}  
+        </div>
+        <ion-icon name="list" class="icob"></ion-icon>
+    </div>
+</div>
+<div class="link-toggle">
+    <div class="links3">
         {%- for navlinks in site.navigation-%}
             <a href="{{navlinks.link}}">{{navlinks.name}}</a>
         {%- endfor-%}  
     </div>
-    <!-- <img src="/assets/portfolio-logo.png" alt="portfolio-logo"> -->
 </div>

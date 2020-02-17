@@ -7,28 +7,32 @@ html,body{
 }
 
 canvas{
-    margin-top: -17px;
+    margin-top: 0px;
     border: none;
 }
 
 .nav-container{
+    width: 100%;
+    display: flex;
     background-color: white;
     color: black;
-    padding: 25px;
+    flex-direction: row;
 }
 
 .nav-container>.title2{
-    margin: 10px 10px;
-    float: left;
+    float: right;
+    margin-left: 18px;
+    padding: 18px 18px;
     font-family: 'Raleway', sans-serif;
+    
 }
 .title2>p{
     font-family: 'Raleway', sans-serif;
 }
 
 .nav-container>.links2{
-    margin: 0 10px;
-    float: right;
+    padding: 18px 18px;
+    float: right!important;
 }
 
 .links2>a{
@@ -38,6 +42,7 @@ canvas{
 }
 
 #container{
+    margin-top: 190px;
     padding: 18px 78px;
     background-color: #f5f5fd;
 }
@@ -46,37 +51,114 @@ canvas{
     margin-bottom: 10px;
 }
 
+.skills>span{
+    margin-bottom: 5px;
+}
+
 .skills-container{
-    padding: 18px 88px;
+    padding: 18px 38px!important;
     display: flex;
     flex-direction: row;
     background-color: #f5f5fd;
-    width: 1000px;
+    width: 1000px!important;
 }
 
-.skills-container>.bar-container{
+
+.skills-container>.bar-holder>.bar-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.skills-container>.bar-holder>.skills{
     display: flex;
     flex-direction: column;
 }
 
-.skills-container>.skills{
+.bar-holder{
+    padding: 48px 18px;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.toggle{
+    background-color: white;
+    color: black;
+    width: 100%;
+    margin:0;
+    height: 65px;
+    font-size: 20px;
+    // text-align: right;
+    flex-direction: row;
+    // display: none;
+}
+
+.toggle>.title2{
+    margin-left: 18px;
+    padding: 18px 18px;
+    float: left;
+    font-family: 'Raleway', sans-serif;
+}
+.toggle>.ico{
+    padding: 10px 18px;
+    float: right;
+}
+
+.toggle>.ico>.icob{
+    cursor: pointer;
+    display:none;
+}
+.link-toggle{
+    min-height: 120px;
+    text-align: center;
+    background-color: white;
+    color: black;
+    padding: 18px 18px;
+    display: none;
+}
+
+.link-toggle>.links3{
+    width: 100%;
+    font-size: 20px;
+    
+}
+.link-toggle>.links3{
     display: flex;
     flex-direction: column;
 }
-
-.skills-container>.skills>span{
-    margin-top: 7px;
-    font-size: 17px;
+.link-toggle>.links3>a{
+    color: black;
+    margin-top: 0px;
+    text-decoration: none;
+}
+.link-toggle>.links3>a:hover{
+    background-color: black;
+    color: white;
+}
+.link-toggle>.links3>a:active{
+    background-color: black;
+    color: white;
+}
+.outer-bar{
+    display: flex;
+    flex-direction: row;
+}
+.skills-container>.bar-holder>.bar-container>.outer-bar>.bar{
+    width: 250px;
+    height: 7px;
+    background-color: grey;
+    margin: 10px 14px;
+}
+.bar-content{
+    width: 50px;
 }
 
-.skills-container>.bar-container>.bar{
-    width: 200px;
-    height: 3px;
-    background-color: blue;
-    margin: 15px 14px;
+
+.skills-image>img{
+    width: 400px;
+    height: 100%;
 }
-
-
 
 .postercontainer{
     background-image: linear-gradient(to bottom, rgba(53, 134, 133, 0.52), rgba(108, 181, 202, 0.73)),
@@ -143,7 +225,10 @@ url('/assets/web.png');
     margin: 0 auto;
 }
 
-
+.bar-container>.outer-bar>.bar{
+    display: flex;
+    flex-direction: row;
+}
 
 hr{
     padding: 0;
@@ -151,17 +236,16 @@ hr{
 }
 
 .canvas-above{
-    position: absolute;
+    position: relative;
     color: white;
     padding: 18px;
-    top: 170;
-    left: 400;
+    margin-top: -400px;
+    margin-left: 400px;
 }
 
 .canvas-button{
     padding: 10px;
     margin-top: 15px;
-    margin-left: 160px;
 }
 
 .canvas-above>h3{
@@ -245,10 +329,7 @@ hr{
 
 
 @media (max-width: 1276px){
-    .canvas-above{
-        top: 170;
-        left: 300;
-    }
+    
     .canvas-above>h3{
         font-size: 38px;
     }
@@ -256,12 +337,12 @@ hr{
         height: 290px;
         width: 450px;
     }
+    .canvas-above{
+        margin-left: 400px;
+    }
 }
 @media (max-width: 1196px){
-    .canvas-above{
-        top: 170;
-        left: 300;
-    }
+    
     .canvas-above>h3{
         font-size: 36px;
     }   
@@ -273,12 +354,17 @@ hr{
         height: 260px;
         width: 400px;
     }
+
+    .skills-image{
+        height: 270px;
+        width: 360px;
+    }
+    .canvas-above{
+        margin-left: 300px;
+    }
 }
 @media (max-width: 1036px){
-    .canvas-above{
-        top: 170;
-        left: 280;
-    }   
+       
     .canvas-above>h3{
         font-size: 34px;
     }
@@ -289,12 +375,16 @@ hr{
         height: 200px;
         width: 300px;
     }
+    .skills-image{
+        height: 240px;
+        width: 320px;
+    }
+    .canvas-above{
+        margin-left: 250px;
+    }
 }
 @media (max-width: 990px){
-    .canvas-above{
-        top: 170;
-        left: 260;
-    }   
+       
     .canvas-above>h3{
         font-size: 33px;
     }
@@ -305,13 +395,17 @@ hr{
         height: 180px;
         width: 270px;
     }
+    .skills-image>img{
+        width: 400px;
+        height: 300px;
+    }
+    .canvas-above{
+        margin-left: 220px;
+    }
 }
 
 @media (max-width: 890px){
-    .canvas-above{
-        top: 170;
-        left: 220;
-    }   
+       
     .canvas-above>h3{
         font-size: 31px;
     }
@@ -326,13 +420,25 @@ hr{
         padding: 0;
         flex-direction: column;
     }
+    .skills-container{
+        flex-direction: column;
+    }
+    .skills-image>img{
+        margin-left: 70px;
+        width: 400px;
+        height: 250px;
+        padding: 0;
+    }
+    .bar-holder{
+        margin-left: 70px;
+    }
+    .canvas-above{
+        margin-left: 200px;
+    }
 }
 
 @media (max-width: 790px){
-    .canvas-above{
-        top: 170;
-        left: 200;
-    }   
+       
     .canvas-above>h3{
         font-size: 30px;
     }
@@ -343,13 +449,40 @@ hr{
         height: 240px;
         width: 100%;
     }
+    .skills-image>img{
+        width: 300px;
+        height: 300px;
+    }
+
+    .toggle{
+        display: block;
+    }
+    .toggle>.ico>.links2{
+        display: none;
+    }
+    .toggle>.ico>.icob{
+        font-size: 30px!important;
+        display: block;
+    }
+    .nav-container{
+        flex-direction: column;
+    }
+    .nav-container>.title2{
+        display:none;
+    }
+
+    .active{
+        display: block;
+    }
+    .canvas-above{
+        margin-left: 200px;
+    }
+    
 }
 
+
 @media (max-width: 740px){
-    .canvas-above{
-        top: 170;
-        left: 100;
-    }   
+     
     .canvas-above>h3{
         font-size: 30px;
     }
@@ -363,13 +496,13 @@ hr{
         height: 220px;
         width: 100%;
     }
+    .canvas-above{
+        margin-left: 140px;
+    }
 }
 
 @media (max-width: 620px){
-    .canvas-above{
-        top: 170;
-        left: 50;
-    }   
+       
     .canvas-above>h3{
         font-size: 28px;
     }
@@ -385,13 +518,13 @@ hr{
     .post-content>.form-back{
         width: 500px;
     }
+    .canvas-above{
+        margin-left: 100px;
+    }
 }
 
 @media (max-width: 500px){
-    .canvas-above{
-        top: 170;
-        left: 40;
-    }   
+       
     .canvas-above>h3{
         font-size: 26px;
     }
@@ -410,14 +543,14 @@ hr{
     .post-content>.form-back{
         width: 450px;
     }
+    .canvas-above{
+        margin-left: 100px;
+    }
 }
 
 
 @media (max-width: 450px){
-    .canvas-above{
-        top: 170;
-        left: 40;
-    }   
+      
     .canvas-above>h3{
         font-size: 20px;
     }
@@ -443,13 +576,19 @@ hr{
     .post-content>.form-back{
         width: 430px;
     }
+
+    
+    .skills-image{
+        width: 200px;
+        height: 200px;
+    }
+    .canvas-above{
+        margin-left: 100px;
+    }
 }
 
 @media (max-width: 400px){
-    .canvas-above{
-        top: 170;
-        left: 40;
-    }   
+       
     .canvas-above>h3{
         font-size: 20px;
     }
@@ -479,13 +618,13 @@ hr{
     .post-content>.form-back{
         width: 430px;
     }
+    .canvas-above{
+        margin-left: 100px;
+    }
 }
 
 @media (max-width: 350px){
-    .canvas-above{
-        top: 170;
-        left: 40;
-    }   
+       
     .canvas-above>h3{
         font-size: 20px;
     }
@@ -508,5 +647,8 @@ hr{
     }
     .post-content>.form-back{
         width: 400px;
+    }
+    .canvas-above{
+        margin-left: 100px;
     }
 }

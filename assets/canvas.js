@@ -2,13 +2,17 @@ $(document).ready(function() {
 	$(".canvas-button").click(function(){
 		var pageId = $(this).attr("data-page");
 		$("html, body").animate({ scrollTop: $("#"+pageId).offset().top },1500);
-	  })
+	  }) 
+	$(".icob").click(function(){
+		console.log("clicked");
+		$(".link-toggle").toggleClass("active");
+	}) 
 });
 
 
 var canvas = document.querySelector('canvas')
 canvas.width = window.document.body.clientWidth;
-canvas.height = 400;
+canvas.height = 500;
 
 console.log(canvas);
 
@@ -39,7 +43,7 @@ window.addEventListener('mousemove' , (event) => {
 })
 window.addEventListener('resize', () => {
     canvas.width = window.document.body.clientWidth;
-    canvas.height = 400;
+    canvas.height = 500;
 })
 function circle(x,y,dx,dy,radius) {
 	this.x = x;
