@@ -4,18 +4,19 @@
 html,body{
     margin: 0!important;
     overflow: hidden;
+    color: white;
 }
 
 canvas{
-    margin-top: 0px;
+    margin-top: -11.6px;
     border: none;
 }
 
 .nav-container{
     width: 100%;
     display: flex;
-    background-color: white;
-    color: black;
+    background-color: black;
+    color: white;
     flex-direction: row;
 }
 
@@ -24,10 +25,13 @@ canvas{
     margin-left: 18px;
     padding: 18px 18px;
     font-family: 'Raleway', sans-serif;
+    font-size: 23px;
     
 }
 .title2>p{
     font-family: 'Raleway', sans-serif;
+    display: inline-block;
+    margin-left: 18px;
 }
 
 .nav-container>.links2{
@@ -38,13 +42,13 @@ canvas{
 .links2>a{
     margin: 10px 10px;
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 #container{
-    margin-top: 190px;
+    margin-top: 189px;
     padding: 18px 78px;
-    background-color: #f5f5fd;
+    background-color: black;
 }
 
 .githubbtn{
@@ -59,7 +63,7 @@ canvas{
     padding: 18px 38px!important;
     display: flex;
     flex-direction: row;
-    background-color: #f5f5fd;
+    background-color: black;
     width: 1000px!important;
 }
 
@@ -83,8 +87,8 @@ canvas{
 }
 
 .toggle{
-    background-color: white;
-    color: black;
+    background-color: black;
+    color: white;
     width: 100%;
     margin:0;
     height: 65px;
@@ -101,6 +105,7 @@ canvas{
     font-family: 'Raleway', sans-serif;
 }
 .toggle>.ico{
+    display: flex;
     padding: 10px 18px;
     float: right;
 }
@@ -112,8 +117,8 @@ canvas{
 .link-toggle{
     min-height: 120px;
     text-align: center;
-    background-color: white;
-    color: black;
+    background-color: black;
+    color: white;
     padding: 18px 18px;
     display: none;
 }
@@ -128,13 +133,13 @@ canvas{
     flex-direction: column;
 }
 .link-toggle>.links3>a{
-    color: black;
+    color: white;
     margin-top: 0px;
     text-decoration: none;
 }
 .link-toggle>.links3>a:hover{
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
 }
 .link-toggle>.links3>a:active{
     background-color: black;
@@ -147,7 +152,7 @@ canvas{
 .skills-container>.bar-holder>.bar-container>.outer-bar>.bar{
     width: 250px;
     height: 7px;
-    background-color: grey;
+    background-color: black;
     margin: 10px 14px;
 }
 .bar-content{
@@ -185,6 +190,8 @@ url('/assets/web.png');
 .card-container{
     overflow: auto;
     display: flex;
+    background-color: black;
+    color: white;
     // flex-direction: row;
     flex-wrap: wrap;
     padding: 38px 68px;
@@ -200,7 +207,7 @@ url('/assets/web.png');
 
 .card:hover{
     cursor: pointer;
-    box-shadow: 1px 1px 20px #333333;
+    box-shadow: 1px 10px 20px white;
     transition: all 0.4s ease;
 }
 
@@ -261,14 +268,21 @@ hr{
     width: 500px;
 }
 
+.toggle>.dark{
+    cursor: pointer;
+    font-size: 28px!important;
+    color: white!important;
+    margin-top: 14px;
+}
+
 .footstyles{
-    box-shadow: 15px 15px 15px 10px black;
-    background-color: white;
-    color: black;
+    box-shadow: 15px 15px 15px 10px white;
+    background-color: black;
+    color: white;
 }
 
 .footstyles>div>div>a{
-    color: black;
+    color: white;
 }
 
 .foot2{
@@ -295,9 +309,7 @@ hr{
     flex-direction: column;
 }
 
-.title2{
-    font-size: 20px;
-}
+
 
 
 .post-content{
