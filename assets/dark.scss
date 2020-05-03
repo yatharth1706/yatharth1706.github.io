@@ -46,7 +46,7 @@ canvas{
 }
 
 #container{
-    margin-top: 189px;
+    margin-top: 0px;
     padding: 18px 78px;
     background-color: black;
 }
@@ -86,17 +86,28 @@ canvas{
     
 }
 
+.canvas-holder{
+    width: 100%;
+    position: relative;
+    height: 70vh;
+}
+
+
 .toggle{
-    background-color: black;
+    background-color: transparent;
     color: white;
     width: 100%;
     margin:0;
     height: 65px;
     font-size: 20px;
+    position: absolute;
+    top: 0;
     // text-align: right;
     flex-direction: row;
     // display: none;
 }
+
+
 
 .toggle>.title2{
    
@@ -246,7 +257,7 @@ hr{
     position: relative;
     color: white;
     padding: 18px;
-    margin-top: -400px;
+    margin-top: -350px;
     margin-left: 400px;
 }
 

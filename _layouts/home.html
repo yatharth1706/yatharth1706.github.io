@@ -2,14 +2,20 @@
 {%- include head.html  -%}
 <body>
     <!-- navigation code -->
-    {%- include nav.html-%}
-    <!-- {%- include poster.html -%} -->
-    <canvas></canvas>
-    <div class="canvas-above">
-        <h3>Hello I'm Yatharth Verma</h3>
-        <h3>I'm a Full Stack Web Developer</h3>
-        <button class="canvas-button" data-page="container">See My Work Below</button>
+    <div class="canvas-holder">
+        {%- include nav.html-%}
+        <!-- {%- include poster.html -%} -->
+        <canvas></canvas>
+        <div class="canvas-above">
+            <h3>Hello I'm Yatharth Verma</h3>
+            <h3>I'm a Full Stack Web Developer</h3>
+            <!-- <button class="canvas-button" data-page="container">See My Work Below</button> -->
+        </div>
+        <div class="button-holder">
+            <img src="/assets/arrow.svg" alt="Arrow" class="canvas-button" data-page = "container">
+        </div>
     </div>
+    
     
     <div id="container">
         

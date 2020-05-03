@@ -42,11 +42,11 @@ canvas{
 .links2>a{
     margin: 10px 10px;
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 #container{
-    margin-top: 189px;
+    margin-top: 0px;
     padding: 18px 78px;
     background-color: #f5f5fd;
 }
@@ -86,13 +86,22 @@ canvas{
     
 }
 
+.canvas-holder{
+    width: 100%;
+    position: relative;
+    height: 450px;
+}
+
+
 .toggle{
-    background-color: white;
-    color: black;
+    background-color: transparent;
+    color: white;
     width: 100%;
     margin:0;
     height: 65px;
     font-size: 20px;
+    position: absolute;
+    top: 0;
     // text-align: right;
     flex-direction: row;
     // display: none;
@@ -138,7 +147,7 @@ canvas{
     flex-direction: column;
 }
 .link-toggle>.links3>a{
-    color: black;
+    color: white;
     margin-top: 0px;
     text-decoration: none;
 }
@@ -245,17 +254,31 @@ hr{
     margin: 0;
 }
 
+
+
 .canvas-above{
     position: relative;
     color: white;
     padding: 18px;
-    margin-top: -400px;
+    margin-top: -350px;
     margin-left: 400px;
+}
+
+.button-holder{
+    position: absolute;
+    width: 100%;
+    bottom: 0;    
 }
 
 .canvas-button{
     padding: 10px;
-    margin-top: 15px;
+    height: 100px;
+    width: 100px;
+    margin-left: 600px;
+}
+
+.canvas-button:hover{
+    cursor: pointer;
 }
 
 .canvas-above>h3{
