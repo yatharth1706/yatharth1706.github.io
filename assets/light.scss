@@ -88,7 +88,7 @@ canvas{
 }
 
 .list-skill{
-    width: 90%;
+    width: 80%;
     display: flex;
     padding: 2px 2px;
     flex-wrap: wrap;
@@ -100,8 +100,8 @@ canvas{
     color: black;
     border-radius: 10px;
     margin: 5px 7px;
-    padding: 0px 10px;
-    height: 30px;
+    padding: 0px 7px;
+    height: 24px;
 }
 
 
@@ -257,6 +257,7 @@ url('/assets/web.png');
     // flex-direction: row;
     flex-wrap: wrap;
     padding: 38px 68px;
+    margin-top: 70px;
 }
 
 .card{
@@ -265,6 +266,7 @@ url('/assets/web.png');
     // display: inline-block!important;
     margin: 18px 18px;    
     border: none;
+
 }
 
 .card:hover{
@@ -283,7 +285,7 @@ url('/assets/web.png');
     overflow: hidden;
     width: 1000px;
     padding: 18px;
-    margin: 18px;
+    margin: 30px auto;
     transition: all 0.5s ease;
 }
 
@@ -368,7 +370,7 @@ hr{
 .title{
     display: flex;
     width: 300px;
-    margin-top: 25px;
+    margin-top: 0px;
 }
 
 .social-links{
@@ -405,6 +407,32 @@ hr{
     display: block;
 }
 
+.skill-logo{
+        height: 70px;
+        width: 70px;    
+}
+
+
+::-webkit-scrollbar {
+  width: 10px;
+
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #000000fa;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #1455D9;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #fff;
+}
 
 
 @media (max-width: 1276px){

@@ -4,6 +4,8 @@ email: yatharthverma070@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Hello Everyone. My name is Yatharth Verma. I am persuing Btech in Computer Science And Engineering.
   This website contains portfolio of mine including various projects that i have done.
+footerdescription: >- 
+    Made with love &hearts; using Jekyll.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  yatharth1706
