@@ -4,7 +4,6 @@
 html,body{
     margin: 0!important;
     overflow: hidden;
-    color: white;
 }
 
 canvas{
@@ -15,18 +14,19 @@ canvas{
 .nav-container{
     width: 100%;
     display: flex;
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     flex-direction: row;
 }
 
 .nav-container>.title2{
+    display: flex!important;
+    flex-direction: row;
     float: right;
     margin-left: 18px;
     padding: 18px 18px;
     font-family: 'Raleway', sans-serif;
     font-size: 23px;
-    
 }
 .title2>p{
     font-family: 'Raleway', sans-serif;
@@ -46,9 +46,10 @@ canvas{
 }
 
 #container{
-    margin-top: 0px;
+    margin-top: 38px;
     padding: 18px 78px;
-    background-color: black;
+    background-color: #000000fa;
+    color: white
 }
 
 .githubbtn{
@@ -63,7 +64,7 @@ canvas{
     padding: 18px 38px!important;
     display: flex;
     flex-direction: row;
-    background-color: black;
+    background-color: #f5f5fd;
     width: 1000px!important;
 }
 
@@ -89,7 +90,7 @@ canvas{
 .canvas-holder{
     width: 100%;
     position: relative;
-    height: 70vh;
+    height: 450px;
 }
 
 
@@ -107,29 +108,32 @@ canvas{
     // display: none;
 }
 
-
-
 .toggle>.title2{
-   
+    
     padding: 18px 5px;
     float: left;
     font-family: 'Raleway', sans-serif;
 }
 .toggle>.ico{
-    display: flex;
     padding: 10px 18px;
     float: right;
+    display: flex;
 }
 
 .toggle>.ico>.icob{
     cursor: pointer;
     display:none;
 }
+.toggle>.dark{
+    font-size: 28px!important;
+    cursor: pointer;
+    margin-top: 14px;
+}
 .link-toggle{
     min-height: 120px;
     text-align: center;
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     padding: 18px 18px;
     display: none;
 }
@@ -149,8 +153,8 @@ canvas{
     text-decoration: none;
 }
 .link-toggle>.links3>a:hover{
-    background-color: white;
-    color: black;
+    background-color: black;
+    color: white;
 }
 .link-toggle>.links3>a:active{
     background-color: black;
@@ -163,7 +167,7 @@ canvas{
 .skills-container>.bar-holder>.bar-container>.outer-bar>.bar{
     width: 250px;
     height: 7px;
-    background-color: black;
+    background-color: grey;
     margin: 10px 14px;
 }
 .bar-content{
@@ -201,8 +205,6 @@ url('/assets/web.png');
 .card-container{
     overflow: auto;
     display: flex;
-    background-color: black;
-    color: white;
     // flex-direction: row;
     flex-wrap: wrap;
     padding: 38px 68px;
@@ -218,7 +220,7 @@ url('/assets/web.png');
 
 .card:hover{
     cursor: pointer;
-    box-shadow: 1px 10px 20px white;
+    box-shadow: 1px 1px 20px #333333;
     transition: all 0.4s ease;
 }
 
@@ -253,6 +255,8 @@ hr{
     margin: 0;
 }
 
+
+
 .canvas-above{
     position: relative;
     color: white;
@@ -261,9 +265,19 @@ hr{
     margin-left: 400px;
 }
 
+.button-holder{
+    position: absolute;
+    width: 100%;
+    bottom: 0;    
+}
+
 .canvas-button{
-    padding: 10px;
-    margin-top: 15px;
+    height: 80px;
+    width: 80px;
+}
+
+.canvas-button:hover{
+    cursor: pointer;
 }
 
 .canvas-above>h3{
@@ -279,21 +293,14 @@ hr{
     width: 500px;
 }
 
-.toggle>.dark{
-    cursor: pointer;
-    font-size: 28px!important;
-    color: white!important;
-    margin-top: 14px;
-}
-
 .footstyles{
-    box-shadow: 15px 15px 15px 10px white;
-    background-color: black;
-    color: white;
+    box-shadow: 15px 15px 15px 10px black;
+    background-color: white;
+    color: black;
 }
 
 .footstyles>div>div>a{
-    color: white;
+    color: black;
 }
 
 .foot2{
@@ -369,9 +376,7 @@ hr{
     .canvas-above>h3{
         font-size: 36px;
     }   
-    .canvas-button{
-        margin-left: 110px;
-    }
+    
 
     .project-photo>img{
         height: 260px;
@@ -391,9 +396,7 @@ hr{
     .canvas-above>h3{
         font-size: 34px;
     }
-    .canvas-button{
-        margin-left: 100px;
-    }
+    
     .project-photo>img{
         height: 200px;
         width: 300px;
@@ -411,9 +414,7 @@ hr{
     .canvas-above>h3{
         font-size: 33px;
     }
-    .canvas-button{
-        margin-left: 100px;
-    }
+    
     .project-photo>img{
         height: 180px;
         width: 270px;
@@ -432,9 +433,7 @@ hr{
     .canvas-above>h3{
         font-size: 31px;
     }
-    .canvas-button{
-        margin-left: 100px;
-    }
+    
     .project-photo>img{
         height: 260px;
         width: 100%;
@@ -465,9 +464,7 @@ hr{
     .canvas-above>h3{
         font-size: 30px;
     }
-    .canvas-button{
-        margin-left: 100px;
-    }
+    
     .project-photo>img{
         height: 240px;
         width: 100%;
@@ -509,9 +506,7 @@ hr{
     .canvas-above>h3{
         font-size: 30px;
     }
-    .canvas-button{
-        margin-left: 100px;
-    }
+    
     #container{
         padding: 10px 60px;
     }
@@ -529,9 +524,7 @@ hr{
     .canvas-above>h3{
         font-size: 28px;
     }
-    .canvas-button{
-        margin-left: 80px;
-    }
+    
     #container{
         padding: 10px 30px;
     }
@@ -551,9 +544,7 @@ hr{
     .canvas-above>h3{
         font-size: 26px;
     }
-    .canvas-button{
-        margin-left: 50px;
-    }
+    
     #container{
         padding: 10px 10px;
     }
@@ -577,9 +568,7 @@ hr{
     .canvas-above>h3{
         font-size: 25px;
     }
-    .canvas-button{
-        margin-left: 50px;
-    }
+
     
     .links2{
         font-size: 3px;
@@ -613,9 +602,7 @@ hr{
     .canvas-above>h3{
         font-size: 25px;
     }
-    .canvas-button{
-        margin-left: 30px;
-    }
+    
     
     .links2{
         display: none;
@@ -646,9 +633,7 @@ hr{
     .canvas-above>h3{
         font-size: 25px;
     }
-    .canvas-button{
-        margin-left: 30px;
-    }
+    
     
     .links2{
         display: none;
