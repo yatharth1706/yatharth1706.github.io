@@ -2,7 +2,8 @@
 
 #### Tech Stack
 * [x] HTML
-* [x] CSS
+* [x] CSS/Sass
+* [x] Bootstrap
 * [x] Jquery
 * [x] JavaScript
 
