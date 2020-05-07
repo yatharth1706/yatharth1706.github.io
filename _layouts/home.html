@@ -20,10 +20,13 @@
     <div id="container">
         
         {%- include skills.html -%}
+        
+        {%- include projects.html -%}
+        
         <div class="card-container">
             
             {%- if site.posts -%}
-            <h3>My Projects</h3>
+            <h3>Blogs</h3>
             {%- endif -%}
             {%- for post in site.posts -%}
                 <div class="project-container">

@@ -4,6 +4,7 @@
 html,body{
     margin: 0!important;
     overflow: hidden;
+    box-sizing: border-box;
 }
 
 canvas{
@@ -226,6 +227,30 @@ canvas{
 
 .skills-image>img{
     width: 400px;
+    height: 100%;
+}
+
+
+.project-section{
+    display: flex!important;
+    width: 100%;
+    background-color: blue!important;
+    height: 100px;
+    flex-wrap: wrap;
+    height: auto;
+}
+
+.project-section > article{
+    width: 33%;
+}
+
+.project-card{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    margin: 2px 2px;
+    padding: 5px 5px;
     height: 100%;
 }
 
