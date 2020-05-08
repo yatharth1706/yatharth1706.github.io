@@ -234,21 +234,23 @@ canvas{
 .project-section{
     display: flex!important;
     width: 100%;
-    background-color: blue!important;
+    background-color: black;
     height: 100px;
     flex-wrap: wrap;
     height: auto;
 }
 
-.project-section > article{
+
+.project-article{
     width: 33%;
+    color: black;
 }
 
 .project-card{
     display: flex;
     flex-direction: column;
     background-color: black;
-    color: white;
+    color:white;
     margin: 2px 2px;
     padding: 5px 5px;
     height: 100%;
