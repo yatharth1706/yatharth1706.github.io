@@ -22,7 +22,7 @@
 ``
 For build
 
-2. ``
+je2. ``
   jekyll new PATH
 ``
 Creates a new Jekyll site with default gem-based theme at specified path

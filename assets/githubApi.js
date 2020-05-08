@@ -126,9 +126,9 @@ Imdb().then((res)=>{
                             githuburl.href = project.url;
                             githuburl.target = "_blank";
                             const globeicon = document.createElement("i");
-                            globeicon.className = "github-link";
+                            
 
-                            globeicon.className = "fas fa-globe";
+                            globeicon.className = "fas fa-globe github-link";
 
                             const h3 = document.createElement("h3");
                             h3.innerText = project.name;

@@ -4,6 +4,7 @@
 html,body{
     margin: 0!important;
     overflow: hidden;
+    box-sizing: border-box;
 }
 
 canvas{
@@ -62,7 +63,7 @@ canvas{
     margin: 10px auto;
     height: 330px;
     background-color: white;
-    color: white;
+    color: black;
     display: flex;
     flex-direction: column;
     border-radius : 10px;
@@ -85,7 +86,7 @@ canvas{
     height: 50%;
     padding: 26px 5px;
     text-align: center;
-    color: black;
+
 }
 
 .list-skill{
@@ -114,7 +115,7 @@ canvas{
     padding: 18px 38px!important;
     display: flex;
     flex-direction: row;
-    background-color: #f5f5fd;
+    background-color: #000000fa;
     width: 1000px!important;
 }
 
@@ -228,6 +229,60 @@ canvas{
 .skills-image>img{
     width: 400px;
     height: 100%;
+}
+
+
+.project-section{
+    display: flex!important;
+    width: 100%;
+    height: 100px;
+    flex-wrap: wrap;
+    height: auto;
+}
+
+.langIcon{
+    margin-left: 20px;
+}
+
+.project-article{
+    width: 31%;
+    color: black;
+    margin-left: 15px;
+    margin-top: 15px; 
+       
+}
+
+.project-card{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    color:black;
+    margin: 2px 2px;
+    padding: 5px 5px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.project-title{
+    display: flex;
+    padding: 10px 10px;
+    position: relative;
+}
+
+.github-link{
+    position: absolute;
+    right: 0;
+    top: 20px;
+}
+
+.project-features{
+    display: flex;
+    padding: 10px 10px;
+}
+
+
+.project-body{
+    padding: 10px 10px;
 }
 
 .postercontainer{
@@ -413,6 +468,7 @@ hr{
         width: 70px;    
 }
 
+
 ::-webkit-scrollbar {
   width: 10px;
 
@@ -468,6 +524,13 @@ hr{
         margin-left: 300px;
     }
 }
+
+@media (max-width: 1166px){
+    .project-article{
+        width: 47%;
+    }
+}
+
 @media (max-width: 1036px){
        
     .canvas-above>h3{
@@ -536,6 +599,13 @@ hr{
     }
 }
 
+@media (max-width: 866px){
+    .project-article{
+        width: 97%;
+    }
+}
+
+
 @media (max-width: 790px){
        
     .canvas-above>h3{
@@ -553,6 +623,8 @@ hr{
 
     .toggle{
         display: block;
+        background-color: black;
+        color: white;
     }
     .toggle>.ico>.links2{
         display: none;
