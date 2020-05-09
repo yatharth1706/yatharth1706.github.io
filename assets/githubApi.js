@@ -109,7 +109,11 @@ Imdb().then((res)=>{
                         temp.url = result.html_url;
                         
                         projects.push(temp);
-                        
+                        projects.sort(function(a, b) {
+                            return new Date(b.updatedAt) - new Date(a.updatedAt);
+                        });
+                        console.log(projects);
+
                         // creating dynamic elements
                         var parentCards = document.querySelector(".project-section");
                         projects.forEach((project) => {
@@ -148,7 +152,7 @@ Imdb().then((res)=>{
                             timeIcon.className = "fas fa-clock timeIcon";
                             
                             timeSpan.appendChild(timeIcon);
-                            timeSpan.appendChild(document.createTextNode(" Last Updated At: "+moment(project.updatedAt).format('d/MMM/YYYY')));
+                            timeSpan.appendChild(document.createTextNode(" Last Updated At: "+moment(project.updatedAt).format('DD/MMM/YYYY')));
 
                             probody.appendChild(p);
                             probody.appendChild(timeSpan);

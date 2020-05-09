@@ -53,6 +53,9 @@ canvas{
     background-color: #f5f5fd;
 }
 
+#container>h3{
+    margin-top: 20px;
+}
 .githubbtn{
     margin-bottom: 10px;
 }
@@ -332,9 +335,10 @@ url('/assets/web.png');
     overflow: auto;
     display: flex;
     // flex-direction: row;
+    width: 100%;
     flex-wrap: wrap;
-    padding: 38px 68px;
-    margin-top: 70px;
+    padding: 38px 38px;
+    margin-top: 20px;
 }
 
 .card{
@@ -357,21 +361,8 @@ url('/assets/web.png');
     width: 100%;
 }
 
-.project-container{
-    display: flex;
-    overflow: hidden;
-    width: 1000px;
-    padding: 18px;
-    margin: 30px auto;
-    transition: all 0.5s ease;
-}
 
-.project-container:hover{
-    box-shadow: 10px 1px 30px 1px #232323;
-}
-.card-container>h3{
-    margin: 0 auto;
-}
+
 
 .bar-container>.outer-bar>.bar{
     display: flex;
@@ -412,13 +403,29 @@ hr{
     font-size: 40px;
 }
 
+.project-container{
+    display: flex;
+    overflow: hidden;
+    width: 45%;
+    padding: 18px;
+    margin-left: 30px;
+    transition: all 0.5s ease;
+    background-color: #f7f3c2;
+    color: black;
+    border-radius: 10px;
+}
+
+.project-container:hover{
+    box-shadow: 10px 1px 30px 1px #232323;
+}
+
 .project-photo,.project-details{
     padding: 18px;
 }
 
 .project-photo>img{
-    height: 300px;
-    width: 500px;
+    height: 120px;
+    width: 200px;
 }
 
 .footstyles{

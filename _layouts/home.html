@@ -22,12 +22,12 @@
         {%- include skills.html -%}
             
         {%- include projects.html -%}
-        
+        {%- if site.posts -%}
+            <h3 class="text-center">Blogs</h3>
+        {%- endif -%}
         <div class="card-container">
             
-            {%- if site.posts -%}
-            <h3>Blogs</h3>
-            {%- endif -%}
+            
             {%- for post in site.posts -%}
                 <div class="project-container">
                     <div class="project-photo">
@@ -42,9 +42,6 @@
                         {%- if post.description -%}
                             <p>{{post.description}}</p>
                         {%- endif -%}
-
-                        <a href="https://github.com/yatharth1706/{{post.githuburl}}"><button class="btn btn-md btn-primary">View on Github</button></a>
-                        
                     </div>
                 </div>
             {%- endfor -%}
