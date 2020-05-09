@@ -124,14 +124,16 @@ Imdb().then((res)=>{
                             
                             const githuburl = document.createElement("a");
                             githuburl.href = project.url;
+                            githuburl.className = "github-link";
                             githuburl.target = "_blank";
                             const globeicon = document.createElement("i");
                             
 
-                            globeicon.className = "fas fa-globe github-link";
+                            globeicon.className = "fas fa-globe";
 
                             const h3 = document.createElement("h3");
                             h3.innerText = project.name;
+                            h3.className = "pro-name";
                             githuburl.appendChild(globeicon);
                             title.appendChild(h3);
                             title.appendChild(githuburl);

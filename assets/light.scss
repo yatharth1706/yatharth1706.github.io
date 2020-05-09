@@ -5,6 +5,7 @@ html,body{
     margin: 0!important;
     overflow: hidden;
     box-sizing: border-box;
+    background-color: black;
 }
 
 canvas{
@@ -56,17 +57,22 @@ canvas{
     margin-bottom: 10px;
 }
 
+.skill-section{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
 .skill-card{
     padding: 10px 5px;
-    width: 90%;
-    margin: 10px auto;
+    width: 31%;
     height: 330px;
     background-color: black;
     color: white;
     display: flex;
     flex-direction: column;
     border-radius : 10px;
-
+    margin: 10px 10px;
 }
 
 .skill-img{
@@ -89,11 +95,10 @@ canvas{
 }
 
 .list-skill{
-    width: 80%;
+    width: 100%;
     display: flex;
-    padding: 2px 2px;
+    padding: 2px 10px;
     flex-wrap: wrap;
-    margin: 0 auto;
 }
 
 .skill-little-card{
@@ -101,7 +106,7 @@ canvas{
     color: black;
     border-radius: 10px;
     margin: 5px 7px;
-    padding: 0px 7px;
+    padding: 0px 4px;
     height: 24px;
 }
 
@@ -145,7 +150,7 @@ canvas{
 
 
 .toggle{
-    background-color: black;
+    background-color: transparent;
     color: white;
     width: 100%;
     margin:0;
@@ -179,13 +184,18 @@ canvas{
     cursor: pointer;
     margin-top: 14px;
 }
+
 .link-toggle{
     min-height: 120px;
     text-align: center;
     background-color: black;
     color: white;
-    padding: 18px 18px;
+    padding: 5px 18px;
     display: none;
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    z-index: 3;
 }
 
 .link-toggle>.links3{
@@ -194,6 +204,7 @@ canvas{
     
 }
 .link-toggle>.links3{
+    margin-top: 15px;
     display: flex;
     flex-direction: column;
 }
@@ -240,8 +251,19 @@ canvas{
 }
 
 .langIcon{
-    margin-left: 20px;
+    margin-left: 10px;
+    color: #007bff;
 }
+
+.star-icon{
+    color: red;
+}
+
+.timeIcon{
+    color: #30c595;
+}
+
+
 
 .project-article{
     width: 31%;
@@ -270,7 +292,7 @@ canvas{
 
 .github-link{
     position: absolute;
-    right: 0;
+    right: 10px;
     top: 20px;
 }
 
@@ -502,7 +524,11 @@ hr{
     .canvas-above{
         margin-left: 400px;
     }
+
 }
+
+
+
 @media (max-width: 1196px){
     
     .canvas-above>h3{
@@ -527,6 +553,11 @@ hr{
 @media (max-width: 1166px){
     .project-article{
         width: 47%;
+    }
+
+    .skill-card{
+        width: 47%;
+        margin: 10px auto;
     }
 }
 
@@ -595,6 +626,11 @@ hr{
     }
     .canvas-above{
         margin-left: 200px;
+    }
+
+    .skill-card{
+        width: 95%;
+        margin: 10px auto;
     }
 }
 
