@@ -410,9 +410,8 @@ hr{
 
 .project-container{
     display: flex;
-    overflow: hidden;
     width: 45%;
-    padding: 18px;
+    padding: 5px;
     margin-left: 30px;
     transition: all 0.5s ease;
     background-color: #f7f3c2;
@@ -424,13 +423,21 @@ hr{
     box-shadow: 10px 1px 30px 1px #232323;
 }
 
+.project-photo{
+    width: 40%;
+}
+
+.project-details{
+    width: 60%;
+}
+
 .project-photo,.project-details{
-    padding: 18px;
+    padding: 4px;
 }
 
 .project-photo>img{
-    height: 120px;
-    width: 200px;
+    height: 100%;
+    width: 100%;
 }
 
 .footstyles{
@@ -529,10 +536,7 @@ hr{
     .canvas-above>h3{
         font-size: 38px;
     }
-    .project-photo>img{
-        height: 290px;
-        width: 450px;
-    }
+    
     .canvas-above{
         margin-left: 400px;
     }
@@ -548,10 +552,7 @@ hr{
     }   
     
 
-    .project-photo>img{
-        height: 260px;
-        width: 400px;
-    }
+    
 
     .skills-image{
         height: 270px;
@@ -579,10 +580,7 @@ hr{
         font-size: 34px;
     }
     
-    .project-photo>img{
-        height: 200px;
-        width: 300px;
-    }
+    
     .skills-image{
         height: 240px;
         width: 320px;
@@ -597,10 +595,11 @@ hr{
         font-size: 33px;
     }
     
-    .project-photo>img{
-        height: 180px;
-        width: 270px;
+    .project-container{
+        width: 100%;
+        margin:15px auto;
     }
+
     .skills-image>img{
         width: 400px;
         height: 300px;
@@ -616,14 +615,6 @@ hr{
         font-size: 31px;
     }
     
-    .project-photo>img{
-        height: 260px;
-        width: 100%;
-    }
-    .project-container{
-        padding: 0;
-        flex-direction: column;
-    }
     .skills-container{
         flex-direction: column;
     }
@@ -646,11 +637,7 @@ hr{
     }
 }
 
-@media (max-width: 866px){
-    .project-article{
-        width: 97%;
-    }
-}
+
 
 
 @media (max-width: 790px){
@@ -659,10 +646,7 @@ hr{
         font-size: 30px;
     }
     
-    .project-photo>img{
-        height: 240px;
-        width: 100%;
-    }
+    
     .skills-image>img{
         width: 300px;
         height: 300px;
@@ -704,10 +688,7 @@ hr{
     #container{
         padding: 10px 60px;
     }
-    .project-photo>img{
-        height: 220px;
-        width: 100%;
-    }
+    
     .canvas-above{
         margin-left: 140px;
     }
