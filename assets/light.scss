@@ -1,6 +1,7 @@
 
 // @import "minima";
 @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
 html,body{
     margin: 0!important;
     overflow: hidden;
@@ -151,9 +152,13 @@ canvas{
     height: 450px;
 }
 
+.jekyll-logo{
+    margin: 2px auto;
+}
 
 .toggle{
-    background-color: transparent;
+    background-color: black;
+    opacity: 0.5;
     color: white;
     width: 100%;
     margin:0;
