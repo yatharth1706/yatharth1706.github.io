@@ -14,6 +14,12 @@ linkedin_username: yatharth-verma-938924169/
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-avatar
+  - jekyll-mentions
+  - jekyll-redirect-from
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jemoji
 
 # Navigation links
 navigation: 
@@ -40,27 +46,7 @@ port:    5000
 host:    127.0.0.1
 baseurl: "" # does not include hostname
 
-# Conversion
-markdown:    kramdown
-highlighter: rouge
-lsi:         false
-excerpt_separator: "\n\n"
 
-kramdown:
-  auto_ids:       true
-  footnote_nr:    1
-  entity_output:  as_char
-  toc_levels:     1..6
-  smart_quotes:   lsquo,rsquo,ldquo,rdquo
-  enable_coderay: false
-
-coderay:
-  coderay_wrap:              div
-  coderay_line_numbers:      inline
-  coderay_line_number_start: 1
-  coderay_tab_width:         4
-  coderay_bold_every:        10
-  coderay_css:               style
 
 # Live Reloading
 # livereload: true

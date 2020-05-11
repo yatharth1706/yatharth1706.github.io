@@ -30,15 +30,17 @@ Jekyll is a static site generator. It uses markdown and layouts to create beauti
 * Interacting with APIs such as GitHub
 * Jekyll itself is a gem as well as many Jekyll plugins including *jekyll-feed*, *jekyll-seo-tag* and *jekyll-archives*.
 
-2. **Gemfile** : A **Gemfile** is a list of gems required for your site. For a simple Jekyll site it might look something like this:
+2. **Gemfile** : A **Gemfile** is a list of gems required for your site. For a simple Jekyll site it might look something like this.
 
-```
+
+```ruby
+    
     source "https://rubygems.org"
 
     gem "jekyll"
 
     group :jekyll_plugins do
-        gem "jekyll-feed"
-        gem "jekyll-seo-tag"
+    gem "jekyll-feed"
+    gem "jekyll-seo-tag"
     end
 ```
