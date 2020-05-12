@@ -1,10 +1,14 @@
-{%- include head.html  -%}
-{%- include nav.html-%}
-<br>
-<br>
-<hr>
-<div class="container-fluid mt-5">
-    <div class="container" style="margin: 10px auto">
+---
+layout: default
+---
+
+<div class="docs-section">
+    <div class="sidebar">
+        {% include docs_contents_mobile.html -%}
+        {% include docs_contents.html  -%}
+    </div>
+    <div class="main_content">
+        <h1>{{page.title}}</h1>
         {{content}}
     </div>
 </div>

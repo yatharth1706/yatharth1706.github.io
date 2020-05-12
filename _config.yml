@@ -31,13 +31,11 @@ navigation:
 
 # Default frontmatter for posts page
 defaults:
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-
+- scope:
+    path: ""
+    type: "posts"
+  values:
+    layout: "post"
 
 
 # Serving

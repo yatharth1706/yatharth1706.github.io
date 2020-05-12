@@ -1,0 +1,14 @@
+<div class="sidebar-main">
+    <aside>
+      {% for section in site.data.docs_nav -%}
+        <h4>{{ section.title }}</h4>
+        <ul>
+        {%- for item in site.data.jekyll_nav.titles -%}
+          <li><a href="{{item.link}}" {% if item.link == page.url %} class = "current" {% endif %}>
+            {{ item.title }}
+          </a></li>
+        {%- endfor %}
+        </ul>
+      {% endfor -%}
+    </aside>
+  </div>

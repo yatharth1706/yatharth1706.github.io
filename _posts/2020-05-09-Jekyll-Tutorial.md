@@ -3,9 +3,9 @@ layout: post
 title: Jekyll Static Site Generator
 description: Tutorial on Jekyll for making static sites
 imageurl: /assets/jekyll.png
-permalink: /jekyll-tutorial
+permalink: /jekyll/introductio
 ---
-<p align="center"><img src="assets/jekyll.png" width="420" height="140"></p>
+<p align="center"><img src="{{ 'assets/jekyll.png' | relative_url }} " width="420" height="140"></p>
 
 ### Jekyll
 
