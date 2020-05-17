@@ -111,7 +111,7 @@ function animate() {
 	c.clearRect(0,0,innerWidth,innerHeight);
 	
 	requestAnimationFrame(animate);
-	c.fillStyle = "black";
+	c.fillStyle = "#0D1440";
 	c.fillRect(0, 0, canvas.width, canvas.height);
 	// circle.update();
 	// c.font = "30px Arial";
