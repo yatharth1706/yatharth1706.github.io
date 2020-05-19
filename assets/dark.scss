@@ -1,11 +1,48 @@
 
 // @import "minima";
 @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
 html,body{
     margin: 0!important;
     overflow: hidden;
     box-sizing: border-box;
     background-color: black;
+    scroll-behavior: smooth;
+}
+
+.docs-section{
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.sidebar{
+    width: 25%;
+    height: 100%;
+    color: white;
+}
+
+.sidebar-main > aside > ul > li{
+    text-decoration: none;
+}
+
+.sidebar-main > aside > ul > li > a{
+    color: black;
+}
+
+.current{
+    color: red!important;
+    font-size: 20px;
+}
+
+.main_content{
+    width: 75%;
+    padding: 5px 5px;
+}
+
+.maincontainer{
+    margin-top: 100px!important;
+    margin-bottom: 20px;
 }
 
 canvas{
@@ -54,21 +91,43 @@ canvas{
     color: white;
 }
 
+#container>h3{
+    margin-top: 20px;
+}
+
 .githubbtn{
     margin-bottom: 10px;
 }
 
+
+
+.skill-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skill-imageBanner-container{
+    width: 41%;
+    height: 330px;
+    margin: 10px 20px;
+}
+
+.skill-imageBanner-container>img{
+    height: 100%;
+    width: 100%;
+}
+
 .skill-card{
     padding: 10px 5px;
-    width: 90%;
-    margin: 10px auto;
-    height: 330px;
-    background-color: white;
-    color: black;
+    width: 41%;
+    height: 330px;  
+    background-color: #0D1440;
+    color: white;
     display: flex;
     flex-direction: column;
     border-radius : 10px;
-
+    margin: 10px 20px;
 }
 
 .skill-img{
@@ -87,14 +146,15 @@ canvas{
     height: 50%;
     padding: 26px 5px;
     text-align: center;
-
+    
 }
 
 .list-skill{
-    width: 72%;
+    width: 100%;
     display: flex;
+    padding: 2px 15px;
+    justify-content: center;
     flex-wrap: wrap;
-    margin: 0 auto;
 }
 
 .skill-little-card{
@@ -102,7 +162,8 @@ canvas{
     color: white;
     border-radius: 10px;
     margin: 5px 7px;
-    padding: 0px 7px;
+    padding: 0px 4px;
+    width: 80px;
     height: 24px;
 }
 
@@ -144,9 +205,13 @@ canvas{
     height: 450px;
 }
 
+.jekyll-logo{
+    margin: 2px auto;
+}
 
 .toggle{
-    background-color: transparent;
+    background-color: transparent
+    opacity: 0.5;
     color: white;
     width: 100%;
     margin:0;
@@ -175,11 +240,17 @@ canvas{
     cursor: pointer;
     display:none;
 }
-.toggle>.dark{
+.darkIcon{
+    margin-top: 24px!important;
     font-size: 28px!important;
-    cursor: pointer;
-    margin-top: 14px;
+    padding: 38px 5px;
 }
+
+
+.dark:hover{
+    cursor: pointer;
+}
+
 .link-toggle{
     min-height: 120px;
     text-align: center;
@@ -196,6 +267,7 @@ canvas{
 .link-toggle>.links3{
     width: 100%;
     font-size: 20px;
+    
 }
 .link-toggle>.links3{
     margin-top: 15px;
@@ -244,6 +316,11 @@ canvas{
     height: auto;
 }
 
+.blog-butn{
+    border-radius: 30px!important;
+    padding: 5px 10px!important;
+}
+
 .langIcon{
     margin-left: 10px;
     color: #007bff;
@@ -270,8 +347,8 @@ canvas{
 .project-card{
     display: flex;
     flex-direction: column;
-    background-color: white;
-    color:black;
+    background-color: #0D1440;
+    color:white;
     margin: 2px 2px;
     padding: 5px 5px;
     height: 300px;
@@ -326,9 +403,10 @@ url('/assets/web.png');
     overflow: auto;
     display: flex;
     // flex-direction: row;
+    width: 100%;
     flex-wrap: wrap;
-    padding: 38px 68px;
-    margin-top: 70px;
+    padding: 38px 38px;
+    margin-top: 20px;
 }
 
 .card{
@@ -351,21 +429,8 @@ url('/assets/web.png');
     width: 100%;
 }
 
-.project-container{
-    display: flex;
-    overflow: hidden;
-    width: 1000px;
-    padding: 18px;
-    margin: 30px auto;
-    transition: all 0.5s ease;
-}
 
-.project-container:hover{
-    box-shadow: 10px 1px 30px 1px #232323;
-}
-.card-container>h3{
-    margin: 0 auto;
-}
+
 
 .bar-container>.outer-bar>.bar{
     display: flex;
@@ -406,13 +471,36 @@ hr{
     font-size: 40px;
 }
 
-.project-photo,.project-details{
-    padding: 18px;
+.project-container{
+    display: flex;
+    width: 45%;
+    height: 200px;
+    margin-left: 30px;
+    transition: all 0.5s ease;
+    background-color: #0D1440;
+    color: white;
+    border-radius: 10px;
+    flex-wrap: wrap;
 }
 
+.project-container:hover{
+    box-shadow: 10px 1px 30px 1px #232323;
+}
+
+.project-photo{
+    width: 40%;
+    padding: 5px 10px;
+}
+
+.project-details{
+    width: 60%;
+    padding: 20px 20px;
+}
+
+
 .project-photo>img{
-    height: 300px;
-    width: 500px;
+    height: 100%;
+    width: 100%;
 }
 
 .footstyles{
@@ -511,19 +599,15 @@ hr{
     .canvas-above>h3{
         font-size: 38px;
     }
-    .project-photo>img{
-        height: 290px;
-        width: 450px;
-    }
+    
     .canvas-above{
         margin-left: 400px;
     }
 
-    .skill-card{
-        width: 100%;
-        height:350px;
-    }
 }
+
+
+
 @media (max-width: 1196px){
     
     .canvas-above>h3{
@@ -531,10 +615,7 @@ hr{
     }   
     
 
-    .project-photo>img{
-        height: 260px;
-        width: 400px;
-    }
+    
 
     .skills-image{
         height: 270px;
@@ -549,6 +630,11 @@ hr{
     .project-article{
         width: 47%;
     }
+
+    .skill-card{
+        width: 47%;
+        margin: 10px auto;
+    }
 }
 
 @media (max-width: 1036px){
@@ -557,10 +643,7 @@ hr{
         font-size: 34px;
     }
     
-    .project-photo>img{
-        height: 200px;
-        width: 300px;
-    }
+    
     .skills-image{
         height: 240px;
         width: 320px;
@@ -575,10 +658,11 @@ hr{
         font-size: 33px;
     }
     
-    .project-photo>img{
-        height: 180px;
-        width: 270px;
+    .project-container{
+        width: 100%;
+        margin:15px auto;
     }
+
     .skills-image>img{
         width: 400px;
         height: 300px;
@@ -594,14 +678,6 @@ hr{
         font-size: 31px;
     }
     
-    .project-photo>img{
-        height: 260px;
-        width: 100%;
-    }
-    .project-container{
-        padding: 0;
-        flex-direction: column;
-    }
     .skills-container{
         flex-direction: column;
     }
@@ -617,13 +693,18 @@ hr{
     .canvas-above{
         margin-left: 200px;
     }
-}
 
-@media (max-width: 866px){
-    .project-article{
-        width: 97%;
+    .skill-card{
+        width: 95%;
+        margin: 10px auto;
+    }
+
+    .project-card{
+        height: 360px;
     }
 }
+
+
 
 
 @media (max-width: 790px){
@@ -632,10 +713,7 @@ hr{
         font-size: 30px;
     }
     
-    .project-photo>img{
-        height: 240px;
-        width: 100%;
-    }
+    
     .skills-image>img{
         width: 300px;
         height: 300px;
@@ -677,12 +755,14 @@ hr{
     #container{
         padding: 10px 60px;
     }
-    .project-photo>img{
-        height: 220px;
-        width: 100%;
-    }
+    
     .canvas-above{
         margin-left: 140px;
+    }
+
+    .project-article{
+        width: 95%;
+        margin: 15px auto;
     }
 }
 

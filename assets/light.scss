@@ -238,10 +238,15 @@ canvas{
     cursor: pointer;
     display:none;
 }
-.toggle>.dark{
+.darkIcon{
+    margin-top: 24px!important;
     font-size: 28px!important;
+    padding: 38px 5px;
+}
+
+
+.dark:hover{
     cursor: pointer;
-    margin-top: 14px;
 }
 
 .link-toggle{

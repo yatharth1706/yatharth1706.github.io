@@ -3,6 +3,7 @@ $(document).ready(function() {
 		var pageId = $(this).attr("data-page");
 		$("html, body").animate({ scrollTop: $("#"+pageId).offset().top },1500);
 	  }) 
+	  
 	$(".icob").click(function(){
 		console.log("clicked");
 		$(".link-toggle").toggleClass("active");
