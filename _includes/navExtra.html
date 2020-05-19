@@ -1,0 +1,26 @@
+<!-- Here we will design a navbar -->
+<div class="toggleExtra">
+    <span class="darkIcon"></span>
+    <div class="title2Extra">
+        {%- if site.title -%}
+            <p style="margin-top:-5px"><strong>{{site.title}}</strong></p>
+        {%- endif -%}
+    </div>
+    <div class="icoExtra">
+        
+        <div class="links2Extra">
+            
+            {%- for navlinks in site.navigation-%}
+                <a href="{{navlinks.link}}">{{navlinks.name}}</a>
+            {%- endfor-%}  
+        </div>
+        <i class="fas fa-list icob"></i>
+    </div>
+</div>
+<div class="link-toggleExtra">
+    <div class="links3Extra">
+        {%- for navlinks in site.navigation-%}
+            <a href="{{navlinks.link}}">{{navlinks.name}}</a>
+        {%- endfor-%}  
+    </div>
+</div>
