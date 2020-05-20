@@ -44,7 +44,11 @@ port:    5000
 host:    127.0.0.1
 baseurl: "" # does not include hostname
 
-
+# Algolia
+algolia:
+  application_id: QHBUWTPYMO
+  index_name: portfolio_index
+  search_only_api_key: 0406fa4cc471666b2540402892693f35
 
 # Live Reloading
 # livereload: true

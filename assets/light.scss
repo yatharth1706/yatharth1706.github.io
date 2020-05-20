@@ -479,6 +479,7 @@ url('/assets/web.png');
 .card-container{
     overflow: auto;
     display: flex;
+    justify-content: center;
     // flex-direction: row;
     width: 100%;
     flex-wrap: wrap;
@@ -550,14 +551,16 @@ hr{
 
 .project-container{
     display: flex;
-    width: 45%;
-    height: 200px;
+    flex-direction: column;
+    width: 30%;
+    height: 400px;
     margin-left: 30px;
     transition: all 0.5s ease;
     background-color: #0D1440;
     color: white;
     border-radius: 10px;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .project-container:hover{
@@ -565,19 +568,21 @@ hr{
 }
 
 .project-photo{
-    width: 40%;
-    padding: 5px 10px;
+    width: 100%;
+    height: 50%;
+    text-align: center;
 }
 
 .project-details{
-    width: 60%;
-    padding: 20px 20px;
+    width: 80%;
+    height: 50%;
+    padding: 10px 30px;
 }
 
 
 .project-photo>img{
-    height: 100%;
-    width: 100%;
+    height: 80%;
+    width: 55%;
 }
 
 .footstyles{

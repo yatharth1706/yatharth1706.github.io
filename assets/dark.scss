@@ -84,17 +84,22 @@ canvas{
     color: white;
 }
 
+.links2Extra>a{
+    margin: 10px 10px;
+    text-decoration: none;
+    color: white;
+}
+
 #container{
     margin-top: 38px;
     padding: 18px 78px;
     background-color: #000000fa;
-    color: white;
+    color: #f5f5fd
 }
 
 #container>h3{
     margin-top: 20px;
 }
-
 .githubbtn{
     margin-bottom: 10px;
 }
@@ -176,7 +181,7 @@ canvas{
     padding: 18px 38px!important;
     display: flex;
     flex-direction: row;
-    background-color: #000000fa;
+    background-color: #f5f5fd;
     width: 1000px!important;
 }
 
@@ -224,22 +229,54 @@ canvas{
     // display: none;
 }
 
+.toggleExtra{
+    background-color: #0D1440;
+    color: white;
+    width: 100%;
+    margin:0;
+    height: 65px;
+    font-size: 20px;
+    position: absolute;
+    top: 0;
+    // text-align: right;
+    flex-direction: row;
+    // display: none;
+}
+
 .toggle>.title2{
     
     padding: 18px 5px;
     float: left;
     font-family: 'Raleway', sans-serif;
 }
+
+.toggleExtra>.title2Extra{
+    padding: 18px 5px;
+    float: left;
+    font-family: 'Raleway', sans-serif;
+}
+
 .toggle>.ico{
     padding: 10px 18px;
     float: right;
     display: flex;
 }
-
+.toggleExtra>.icoExtra{
+    padding: 10px 18px;
+    float: right;
+    display: flex;
+}
 .toggle>.ico>.icob{
     cursor: pointer;
     display:none;
 }
+
+
+.toggleExtra>.icoExtra>.icob{
+    cursor: pointer;
+    display:none;
+}
+
 .darkIcon{
     margin-top: 24px!important;
     font-size: 28px!important;
@@ -264,29 +301,70 @@ canvas{
     z-index: 3;
 }
 
+.link-toggleExtra{
+    min-height: 120px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 5px 18px;
+    display: none;
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    z-index: 3;
+}
+
 .link-toggle>.links3{
     width: 100%;
     font-size: 20px;
     
 }
+
+.link-toggleExtra>.links3Extra{
+    width: 100%;
+    font-size: 20px;
+    
+}
+
 .link-toggle>.links3{
     margin-top: 15px;
     display: flex;
     flex-direction: column;
 }
+
+.link-toggleExtra>.links3Extra{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
 .link-toggle>.links3>a{
     color: white;
     margin-top: 0px;
     text-decoration: none;
 }
+
+.link-toggleExtra>.links3Extra>a{
+    color: white;
+    margin-top: 0px;
+    text-decoration: none;
+}
+
 .link-toggle>.links3>a:hover{
     background-color: black;
     color: white;
 }
+
+.link-toggleExtra>.links3Extra>a:hover{
+    background-color: black;
+    color: white;
+}
+
 .link-toggle>.links3>a:active{
     background-color: black;
     color: white;
 }
+
 .outer-bar{
     display: flex;
     flex-direction: row;
@@ -402,6 +480,7 @@ url('/assets/web.png');
 .card-container{
     overflow: auto;
     display: flex;
+    justify-content: center;
     // flex-direction: row;
     width: 100%;
     flex-wrap: wrap;
@@ -473,14 +552,16 @@ hr{
 
 .project-container{
     display: flex;
-    width: 45%;
-    height: 200px;
+    flex-direction: column;
+    width: 30%;
+    height: 400px;
     margin-left: 30px;
     transition: all 0.5s ease;
     background-color: #0D1440;
     color: white;
     border-radius: 10px;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .project-container:hover{
@@ -488,19 +569,21 @@ hr{
 }
 
 .project-photo{
-    width: 40%;
-    padding: 5px 10px;
+    width: 100%;
+    height: 50%;
+    text-align: center;
 }
 
 .project-details{
-    width: 60%;
-    padding: 20px 20px;
+    width: 80%;
+    height: 50%;
+    padding: 10px 30px;
 }
 
 
 .project-photo>img{
-    height: 100%;
-    width: 100%;
+    height: 80%;
+    width: 55%;
 }
 
 .footstyles{
@@ -725,7 +808,14 @@ hr{
     .toggle>.ico>.links2{
         display: none;
     }
+    .toggleExtra>.icoExtra>.links2Extra{
+        display: none;
+    }
     .toggle>.ico>.icob{
+        font-size: 30px!important;
+        display: block;
+    }
+    .toggleExtra>.icoExtra>.icob{
         font-size: 30px!important;
         display: block;
     }
@@ -801,6 +891,9 @@ hr{
     .links2{
         display: none;
     }
+    .links2Extra{
+        display: none;
+    }
     .post-content>.form-back{
         width: 450px;
     }
@@ -818,6 +911,9 @@ hr{
 
     
     .links2{
+        font-size: 3px;
+    }
+    .links2Extra{
         font-size: 3px;
     }
     #container{
@@ -854,6 +950,11 @@ hr{
     .links2{
         display: none;
     }
+
+    .links2Extra{
+        display: none;
+    }
+
     #container{
         padding: 10px 0px;
     }
@@ -885,6 +986,11 @@ hr{
     .links2{
         display: none;
     }
+
+    .links2Extra{
+        display: none;
+    }
+
     .container{
         font-size: 10px;
     }
