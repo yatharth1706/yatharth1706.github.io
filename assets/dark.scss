@@ -94,7 +94,7 @@ canvas{
     margin-top: 38px;
     padding: 18px 78px;
     background-color: #000000fa;
-    color: #f5f5fd
+    color: #f5f5fd;
 }
 
 #container>h3{
@@ -126,7 +126,7 @@ canvas{
 .skill-card{
     padding: 10px 5px;
     width: 41%;
-    height: 330px;  
+    height: 370px;  
     background-color: #0D1440;
     color: white;
     display: flex;
@@ -289,29 +289,33 @@ canvas{
 }
 
 .link-toggle{
-    min-height: 120px;
+    min-height: 200px;
     text-align: center;
     background-color: black;
     color: white;
     padding: 5px 18px;
     display: none;
     position: absolute;
+    left: -780px;
     top: 50px;
     width: 100%;
     z-index: 3;
+    transition: left 0.01s ease-out;
 }
 
 .link-toggleExtra{
-    min-height: 120px;
+    min-height: 200px;
     text-align: center;
     background-color: black;
     color: white;
     padding: 5px 18px;
     display: none;
     position: absolute;
+    left: -780px;
     top: 50px;
     width: 100%;
     z-index: 3;
+    transition: left 0.01s ease-out;
 }
 
 .link-toggle>.links3{
@@ -340,13 +344,13 @@ canvas{
 
 .link-toggle>.links3>a{
     color: white;
-    margin-top: 0px;
+    margin-top: 10px;
     text-decoration: none;
 }
 
 .link-toggleExtra>.links3Extra>a{
     color: white;
-    margin-top: 0px;
+    margin-top: 10px;
     text-decoration: none;
 }
 
@@ -828,6 +832,8 @@ hr{
 
     .active{
         display: block;
+        left: 0px;
+        transition: left 0.5s;
     }
     .canvas-above{
         margin-left: 200px;

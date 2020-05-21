@@ -15,15 +15,15 @@
         </div>
         <div class="col-md-6 social-links">
             {%- if site.email -%}
-            <span><ion-icon name="mail"></ion-icon> {{site.email}}</span>
+            <span><i class="fas fa-envelope"></i> {{site.email}}</span>
             {%- endif -%}
             
             {%- if site.github_username -%}
-                <span><ion-icon name="logo-github"></ion-icon><a href="https://github.com/{{site.github_username}}"> {{site.github_username}}</a></span>
+                <span><i class="fab fa-github-alt"></i><a href="https://github.com/{{site.github_username}}"> {{site.github_username}}</a></span>
             {%- endif -%}
             
             {%- if site.linkedin_username -%}
-           <span><ion-icon name="logo-linkedin"></ion-icon><a href="https://linkedin.com/in/{{site.linkedin_username}}"> {{site.linkedin_username}}</a></span>
+           <span><i class="fab fa-linkedin-in"></i><a href="https://linkedin.com/in/{{site.linkedin_username}}"> {{site.linkedin_username}}</a></span>
             {%- endif -%}
         </div>
     </div>

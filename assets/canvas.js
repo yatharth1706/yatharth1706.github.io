@@ -7,12 +7,13 @@ $(document).ready(function() {
 	$(".icob").click(function(){
 		console.log("clicked");
 		$(".link-toggle").toggleClass("active");
-		$(".link-toggleExtra").toggleClass("active");
-	}) 
+		// $(".link-toggleExtra").toggleClass("active");
+	})
+
 });
 
 
-var canvas = document.querySelector('canvas')
+var canvas = document.querySelector('canvas');
 canvas.width = window.document.body.clientWidth;
 canvas.height = 500;
 
