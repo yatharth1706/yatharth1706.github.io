@@ -41,6 +41,7 @@
                     <div class="project-details">
                         {%- if post.title -%}
                             <a href="{{post.permalink}}"><h3 class="blog-title">{{post.title}}</h3></a>
+                            <span>{{post.date || date : "%b %d, %Y"}}</span>
                         {%- endif -%}
                         {%- if post.description -%}
                             <p>{{post.description}}</p>
