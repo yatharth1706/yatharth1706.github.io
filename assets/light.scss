@@ -480,16 +480,22 @@ url('/assets/web.png');
 
     font-size: 50px;
 }
+
 .card-container{
-    overflow: auto;
     display: flex;
-    justify-content: center;
-    // flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    height: auto;
     width: 100%;
-    flex-wrap: wrap;
-    padding: 38px 38px;
-    margin-top: 20px;
+    
 }
+.card-container::-webkit-scrollbar{
+    -webkit-appearance: none!important;
+    height: .5em!important;
+}
+
+
 
 .card{
     width: 21rem;
@@ -555,10 +561,13 @@ hr{
 
 .project-container{
     display: flex;
+    flex: 0 0 auto;
     flex-direction: column;
-    width: 30%;
-    height: 400px;
-    margin-left: 30px;
+    width: 33%;
+    height: 440px;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     transition: all 0.5s ease;
     background-color: #0D1440;
     color: white;
@@ -567,26 +576,30 @@ hr{
     justify-content: center;
 }
 
+
+
 .project-container:hover{
     box-shadow: 10px 1px 30px 1px #232323;
 }
 
 .project-photo{
     width: 100%;
-    height: 50%;
-    text-align: center;
+    height: 60%;
 }
 
 .project-details{
-    width: 80%;
-    height: 50%;
+    width: 100%;
+    height: 40%;
     padding: 10px 30px;
 }
 
+.blog-title{
+    font-size: 25px;
+}
 
 .project-photo>img{
-    height: 80%;
-    width: 55%;
+    height: 100%;
+    width: 100%;
 }
 
 .footstyles{
@@ -676,7 +689,7 @@ hr{
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #fff;
+  background: red;
 }
 
 
@@ -721,6 +734,10 @@ hr{
         width: 47%;
         margin: 10px auto;
     }
+
+    .project-container{
+        width:42%;
+    }
 }
 
 @media (max-width: 1036px){
@@ -745,8 +762,8 @@ hr{
     }
     
     .project-container{
-        width: 100%;
-        margin:15px auto;
+        width: 55%;
+        margin: 15px 20px;
     }
 
     .skills-image>img{
@@ -838,6 +855,9 @@ hr{
         margin-left: 200px;
     }
     
+    .project-container{
+        width: 80%;
+    }
 }
 
 
@@ -874,9 +894,7 @@ hr{
     #container{
         padding: 10px 30px;
     }
-    .card-container{
-        padding: 38px 10px;
-    }
+    
     .post-content>.form-back{
         width: 500px;
     }
@@ -894,9 +912,7 @@ hr{
     #container{
         padding: 10px 10px;
     }
-    .card-container{
-        padding: 38px 10px;
-    }
+    
     .links2{
         display: none;
     }
@@ -908,6 +924,14 @@ hr{
     }
     .canvas-above{
         margin-left: 100px;
+    }
+    .card-container{
+        width: 90%;
+        margin: 10px auto;
+    }
+    .project-container{
+        width: 100%;
+        margin: 10px 2px;
     }
 }
 
@@ -928,9 +952,8 @@ hr{
     #container{
         padding: 10px 0px;
     }
-    .card-container{
-        padding: 38px 10px;
-    }
+    
+
     .post-content>p>img{
         width: 350px;
         height: 270px;
@@ -967,9 +990,7 @@ hr{
     #container{
         padding: 10px 0px;
     }
-    .card-container{
-        padding: 38px 0px;
-    }
+    
     .foot2{
         flex-direction: column;
     }
