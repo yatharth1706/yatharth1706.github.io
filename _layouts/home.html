@@ -47,7 +47,7 @@
                             <p>{{post.description}}</p>
                             
                         {%- endif -%}
-                        <button class="btn btn-sm btn-primary blog-butn">View More</button>
+                        <a href="{{post.permalink}}"><button class="btn btn-sm btn-primary blog-butn">View More</button></a>
                     </div>
                 </div>
             {%- endfor -%}

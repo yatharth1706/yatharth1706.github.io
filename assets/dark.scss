@@ -10,10 +10,17 @@ html,body{
     scroll-behavior: smooth;
 }
 
+body{
+    background-color: black!important;
+    color: white!important;
+}
+
 .docs-section{
     display: flex;
     width: 100%;
     height: auto;
+    background-color: black;
+    color: white;
 }
 
 
@@ -21,6 +28,7 @@ html,body{
     color: red!important;
     font-size: 20px;
 }
+
 
 .main_content{
     width: 100%;
@@ -486,6 +494,10 @@ url('/assets/web.png');
 .highlighter-rouge::-webkit-scrollbar{
     -webkit-appearance: none!important;
     height: .5em!important;
+}
+
+.highlight{
+    background-color: #061323!important;
 }
 
 .card{
