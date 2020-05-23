@@ -1,20 +1,22 @@
 <!-- Here we will design a navbar -->
 <div class="toggle">
-    <span class="darkIcon"></span>
+    
     <div class="title2">
         {%- if site.title -%}
-            <p style="margin-top:-5px"><strong>{{site.title}}</strong></p>
+            <p style="margin-top:-5px"><strong>{{site.title}}<span class="darkIcon"></span></strong></p>
         {%- endif -%}
+
+         
     </div>
     <div class="ico">
         
         <div class="links2">
-            
+               
             {%- for navlinks in site.navigation-%}
                 <a href="{{navlinks.link}}">{{navlinks.name}}</a>
             {%- endfor-%}  
         </div>
-
+        
         <span class="icob"><i class="fas fa-list"></i></span>
     </div>
 </div>

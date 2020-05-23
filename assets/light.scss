@@ -265,9 +265,11 @@ canvas{
 
 .darkIcon{
     margin-top: 24px!important;
-    font-size: 28px!important;
-    padding: 38px 5px;
+    font-size: 23px!important;
+    padding: 18px 5px;
 }
+
+
 
 
 .dark:hover{
@@ -520,14 +522,15 @@ hr{
     margin: 0;
 }
 
+.canvasAboveContainer{
+    position: absolute;
+    top: 30%;
+}
 
 
 .canvas-above{
-    position: relative;
     color: white;
     padding: 18px;
-    margin-top: -350px;
-    margin-left: 400px;
 }
 
 .button-holder{
@@ -537,17 +540,15 @@ hr{
 }
 
 .canvas-button{
-    height: 80px;
-    width: 80px;
+    height: 50px;
+    width: 50px;
 }
 
 .canvas-button:hover{
     cursor: pointer;
 }
 
-.canvas-above>h3{
-    font-size: 40px;
-}
+
 
 .project-container{
     display: flex;
@@ -685,23 +686,14 @@ hr{
 
 @media (max-width: 1276px){
     
-    .canvas-above>h3{
-        font-size: 38px;
-    }
-    
-    .canvas-above{
-        margin-left: 400px;
-    }
+
 
 }
 
 
 
 @media (max-width: 1196px){
-    
-    .canvas-above>h3{
-        font-size: 36px;
-    }   
+  
     
 
     
@@ -709,9 +701,6 @@ hr{
     .skills-image{
         height: 270px;
         width: 360px;
-    }
-    .canvas-above{
-        margin-left: 300px;
     }
 }
 
@@ -731,25 +720,16 @@ hr{
 }
 
 @media (max-width: 1036px){
-       
-    .canvas-above>h3{
-        font-size: 34px;
-    }
+    
     
     
     .skills-image{
         height: 240px;
         width: 320px;
     }
-    .canvas-above{
-        margin-left: 250px;
-    }
 }
 @media (max-width: 990px){
-       
-    .canvas-above>h3{
-        font-size: 33px;
-    }
+    
     
     .project-container{
         width: 55%;
@@ -760,16 +740,10 @@ hr{
         width: 400px;
         height: 300px;
     }
-    .canvas-above{
-        margin-left: 220px;
-    }
 }
 
 @media (max-width: 890px){
-       
-    .canvas-above>h3{
-        font-size: 31px;
-    }
+    
     
     .skills-container{
         flex-direction: column;
@@ -782,9 +756,6 @@ hr{
     }
     .bar-holder{
         margin-left: 70px;
-    }
-    .canvas-above{
-        margin-left: 200px;
     }
 
     .skill-card{
@@ -801,10 +772,7 @@ hr{
 
 
 @media (max-width: 790px){
-       
-    .canvas-above>h3{
-        font-size: 30px;
-    }
+    
     
     
     .skills-image>img{
@@ -841,9 +809,6 @@ hr{
         left: 0px;
         transition: left 0.5s;
     }
-    .canvas-above{
-        margin-left: 200px;
-    }
     
     .project-container{
         width: 80%;
@@ -853,17 +818,11 @@ hr{
 
 @media (max-width: 740px){
      
-    .canvas-above>h3{
-        font-size: 30px;
-    }
     
     #container{
         padding: 10px 60px;
     }
     
-    .canvas-above{
-        margin-left: 140px;
-    }
 
     .project-article{
         width: 95%;
@@ -873,9 +832,6 @@ hr{
 
 @media (max-width: 620px){
        
-    .canvas-above>h3{
-        font-size: 28px;
-    }
 
     .skill-card{
         height: 350px;
@@ -888,17 +844,11 @@ hr{
     .post-content>.form-back{
         width: 500px;
     }
-    .canvas-above{
-        margin-left: 100px;
-    }
+
 }
 
 @media (max-width: 500px){
        
-    .canvas-above>h3{
-        font-size: 26px;
-    }
-    
     #container{
         padding: 10px 10px;
     }
@@ -912,9 +862,7 @@ hr{
     .post-content>.form-back{
         width: 450px;
     }
-    .canvas-above{
-        margin-left: 100px;
-    }
+
     .card-container{
         width: 90%;
         margin: 10px auto;
@@ -928,9 +876,6 @@ hr{
 
 @media (max-width: 450px){
       
-    .canvas-above>h3{
-        font-size: 25px;
-    }
 
     
     .links2{
@@ -957,16 +902,11 @@ hr{
         width: 200px;
         height: 200px;
     }
-    .canvas-above{
-        margin-left: 60px;
-    }
+
 }
 
 @media (max-width: 400px){
        
-    .canvas-above>h3{
-        font-size: 25px;
-    }
     
     
     .links2{
@@ -991,16 +931,10 @@ hr{
     .post-content>.form-back{
         width: 430px;
     }
-    .canvas-above{
-        margin-left: 70px;
-    }
 }
 
 @media (max-width: 350px){
-       
-    .canvas-above>h3{
-        font-size: 25px;
-    }
+    
     
     
     .links2{
@@ -1020,8 +954,5 @@ hr{
     }
     .post-content>.form-back{
         width: 400px;
-    }
-    .canvas-above{
-        margin-left: 60px;
     }
 }

@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded',() => {
         if(mode == "dark"){
             icon.className = "fas fa-moon dark";
         }else{
-            icon.className = "fas fa-sun dark";
+            icon.className = "fas fa-sun dark sunIcon";
         }
         themeToggle.innerHTML = '';
         themeToggle.insertAdjacentElement("beforeend",icon);      
