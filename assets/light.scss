@@ -25,6 +25,10 @@ html,body{
 .main_content{
     width: 100%;
     padding: 5px 5px;
+    position: relative;
+}
+.editIcon{
+    font-size: 25px;
 }
 
 .maincontainer{
@@ -237,7 +241,7 @@ canvas{
 }
 
 .toggleExtra>.title2Extra{
-    padding: 18px 5px;
+    padding: 18px 25px;
     float: left;
     font-family: 'Raleway', sans-serif;
 }
@@ -554,7 +558,7 @@ hr{
     display: flex;
     flex: 0 0 auto;
     flex-direction: column;
-    width: 31%;
+    width: 32%;
     height:460px;
     margin-left: 20px;
     margin-top: 10px;
@@ -566,6 +570,7 @@ hr{
     flex-wrap: wrap;
     justify-content: center;
 }
+
 
 
 
@@ -635,6 +640,7 @@ hr{
     width: 1000px;
     min-height: 80vh;
     display: flex;
+    margin-top: 60px;
     flex-direction: column;
 }
 
@@ -813,6 +819,10 @@ hr{
     .project-container{
         width: 80%;
     }
+
+    .canvas-above>h2{
+        font-size: 27px;
+    }
 }
 
 
@@ -870,6 +880,9 @@ hr{
     .project-container{
         width: 100%;
         margin: 10px 2px;
+    }
+    .canvas-above>h2{
+        font-size: 24px;
     }
 }
 

@@ -10,11 +10,17 @@ html,body{
     scroll-behavior: smooth;
 }
 
+body{
+    color: white!important;
+    background-color: #0D1440!important;
+}
 .docs-section{
     display: flex;
     width: 100%;
     height: auto;
+
 }
+
 
 
 .current{
@@ -26,7 +32,9 @@ html,body{
     width: 100%;
     padding: 5px 5px;
 }
-
+.editIcon{
+    font-size: 25px;
+}
 .maincontainer{
     margin-top: 100px!important;
     margin-bottom: 20px;
@@ -238,7 +246,7 @@ canvas{
 }
 
 .toggleExtra>.title2Extra{
-    padding: 18px 5px;
+    padding: 18px 25px;
     float: left;
     font-family: 'Raleway', sans-serif;
 }
@@ -555,7 +563,7 @@ hr{
     display: flex;
     flex: 0 0 auto;
     flex-direction: column;
-    width: 31%;
+    width: 32%;
     height:460px;
     margin-left: 20px;
     margin-top: 10px;
@@ -636,6 +644,7 @@ hr{
     width: 1000px;
     min-height: 80vh;
     display: flex;
+    margin-top: 60px;
     flex-direction: column;
 }
 
@@ -784,6 +793,9 @@ hr{
     .toggle{
         display: block;
     }
+    .canvas-above>h2{
+        font-size: 27px;
+    }
     .toggle>.ico>.links2{
         display: none;
     }
@@ -871,6 +883,9 @@ hr{
     .project-container{
         width: 100%;
         margin: 10px 2px;
+    }
+    .canvas-above>h2{
+        font-size: 24px;
     }
 }
 
